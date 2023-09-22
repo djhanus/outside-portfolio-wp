@@ -23,7 +23,6 @@ body {
 section {
   padding: 4rem 0;
   margin: 0 auto;
-  border: 1px dotted #333;
 }
 @media (max-width: 1023px) {
   section {
@@ -33,12 +32,11 @@ section {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1080px;
   height: auto;
   position: relative;
   padding: 1rem 4rem;
   margin: 0 auto;
-  border: 3px dotted #CCC;
 }
 
 body, p, ul, ol, section, div {
@@ -184,7 +182,7 @@ footer {
   color: #FFFFFF;
   padding: 1rem 0;
   text-align: center;
-  background-color: #22211D;
+  background-color: #0044FF;
   padding: 5rem 0;
   min-height: 500px;
   position: relative;
@@ -217,7 +215,6 @@ header .container {
   align-items: center;
   margin: 0 auto;
   padding: 2rem;
-  max-width: 1600px;
 }
 @media (max-width: 1023px) {
   header .container {
@@ -225,7 +222,6 @@ header .container {
   }
 }
 header .logo-container {
-  border: 2px dashed red;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -234,6 +230,13 @@ header .logo-container img {
   display: block;
   max-width: 200px;
   height: auto;
+}
+header .logo-container span.brand {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #0044FF;
+  text-transform: capitalize;
 }
 header .main-menu-container {
   border: 2px dashed blue;
@@ -417,38 +420,53 @@ section.flex--hero-banner .container .text-container p {
   font-style: italic;
 }
 
+section.home--featured-image .featured-wrapper {
+  border: 2px solid #0044FF;
+  border-radius: 5px;
+  height: 550px;
+  width: auto;
+}
+
 section.home--intro {
-  border: 2px dashed black;
-  padding: 8rem 2rem;
+  padding: 4rem 2rem;
 }
 section.home--intro p {
+  font-family: "franklin-gothic-urw", sans-serif;
   font-size: 2rem;
+  font-weight: 400;
 }
 
 section.home--portfolio .portfolio-wrapper {
-  border: 3px dashed blue;
-  padding: 4rem;
+  border: 2px dashed #CCC;
+  padding: 2rem;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 section.home--portfolio .portfolio-wrapper .portfolio-item {
-  border: 2px solid blue;
-  border-radius: 15px;
-  height: 250px;
-  width: 425px;
+  width: 100%;
+  display: block;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: row;
 }
 section.home--portfolio .portfolio-wrapper .portfolio-item:nth-of-type(1) {
-  height: 350px;
-  width: 450px;
+  height: 300px;
+  width: 300px;
 }
 section.home--portfolio .portfolio-wrapper .portfolio-item:nth-of-type(2) {
-  height: 325px;
-  width: 425px;
+  height: 400px;
+  width: 500px;
 }
-section.home--portfolio .portfolio-wrapper .portfolio-item:nth-of-type(3) {
-  height: 350px;
-  width: 525px;
+section.home--portfolio .portfolio-wrapper .portfolio-item img {
+  width: 100%;
+}
+section.home--portfolio .portfolio-wrapper .portfolio-item div.caption {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

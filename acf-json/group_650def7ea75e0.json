@@ -1,13 +1,13 @@
 {
-    "key": "group_64fb28a3d9a4f",
-    "title": "Theme Options",
+    "key": "group_650def7ea75e0",
+    "title": "Front Page",
     "fields": [
         {
-            "key": "field_64fb28a343512",
-            "label": "Footer Block",
-            "name": "footer_block",
+            "key": "field_650def7e37b91",
+            "label": "Introduction Text",
+            "name": "introduction_text",
             "aria-label": "",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -18,17 +18,17 @@
             },
             "default_value": "",
             "maxlength": "",
+            "rows": "",
             "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "new_lines": ""
         }
     ],
     "location": [
         [
             {
-                "param": "options_page",
+                "param": "page_type",
                 "operator": "==",
-                "value": "theme-options"
+                "value": "front_page"
             }
         ]
     ],
@@ -41,5 +41,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1694181579
+    "modified": 1695412159
 }

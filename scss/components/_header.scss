@@ -9,7 +9,6 @@ header {
     align-items: center;
     margin: 0 auto;
     padding: 2rem;
-    max-width: 1600px;
 
     @include media ('<desktop') {
       max-width: 720px;
@@ -17,7 +16,6 @@ header {
   }
 
   .logo-container {
-    border: 2px dashed red;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -26,6 +24,14 @@ header {
       display: block;
       max-width: 200px;
       height: auto;
+    }
+
+    span.brand {
+      font-family: $font--franklin-gothic;
+      font-weight: 500;
+      font-size: 2.5rem;
+      color: $color--primary-blue;
+      text-transform: capitalize;
     }
   }
 
