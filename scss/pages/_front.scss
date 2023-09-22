@@ -1,0 +1,44 @@
+section.home--intro {
+  border: 2px dashed black;
+  padding: 8rem 2rem;
+
+  p {
+    font-size: 2.0rem;
+  }
+}
+
+
+section.home--portfolio {
+
+  .portfolio-wrapper {
+    border: 3px dashed blue;
+    padding: 4rem;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+
+    .portfolio-item {
+      border: 2px solid blue;
+      border-radius: 15px;
+      height: 250px;
+      width: 425px;
+
+      &:nth-of-type(1) {
+        height: 350px;
+        width: 450px;
+      }
+      &:nth-of-type(2) {
+        height: 325px;
+        width: 425px;
+      }
+      &:nth-of-type(3) {
+        height: 350px;
+        width: 525px;
+      }
+
+
+    }
+  }
+
+}

@@ -1,0 +1,41 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0 auto;
+  color: blue;
+}
+
+.cf::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+section {
+  padding: 4rem 0;
+  margin: 0 auto;
+  border: 1px dotted #333;
+
+  @include media ('<desktop') {
+    padding: 1.0rem 0;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  position: relative;
+  padding: 1rem 4rem;
+  margin: 0 auto;
+  border: 3px dotted #CCC;
+}
