@@ -23,9 +23,9 @@
         ?>
 
         <div class="dark-mode-button">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/temp/pill.png" alt="darkmode-btn">
+          <img src="<?php echo get_field('dark_mode_icon','options'); ?>" alt="darkmode-btn">
         </div>
-        
+
       </div>
 
     </div>
