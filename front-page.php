@@ -57,6 +57,22 @@
     </div>
   </section>
 
+  <section class="home--intro">
+    <div class="container">
+      <div class="feature-container">
+
+      </div>
+
+      <div class="text-container">
+        Aliquam rhoncus ante venenatis lectus ullamcorper tincidunt eget ut arcu. Nunc viverra eget diam et egestas. Nullam vitae enim mattis, tincidunt ipsum quis, porttitor neque.
+      </div>
+
+      <div class="btn-holder">
+        <a href="#" class="btn arrow">Let's Discuss</a>
+      </div>
+    </div>
+  </section>
+
 
 <?php endwhile; endif;
   get_footer(); ?>

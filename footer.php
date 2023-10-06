@@ -1,9 +1,14 @@
 <footer>
   <div class="container">
-    <div class="footer-navigation">
+
+    <div class="logo-container">
+      &copy; <?php bloginfo('name'); ?>
     </div>
 
-    <p>&copy; <?=date('Y')?> <?php bloginfo('name'); ?></p>
+    <div class="links-container">
+      link 1 link 2
+    </div>
+
   </div>
 </footer>
 
