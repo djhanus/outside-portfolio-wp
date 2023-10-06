@@ -50,6 +50,12 @@
     </div>
   </section>
 
+  <section class="about-us">
+    <div class="container">
+
+    </div>
+  </section>
+
 
 <?php endwhile; endif;
   get_footer(); ?>
