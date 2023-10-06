@@ -6,7 +6,7 @@ header {
   .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 auto;
     padding: 2rem;
 
@@ -16,58 +16,69 @@ header {
   }
 
   .logo-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    font-family: $font--franklin-gothic;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.25;
+    color: $color--primary-blue;
+    // border: 2px dashed black;
 
-    img {
-      display: block;
-      max-width: 200px;
-      height: auto;
-    }
-
-    span.brand {
+    a {
       font-family: $font--franklin-gothic;
       font-weight: 500;
-      font-size: 2.5rem;
-      color: $color--primary-blue;
       text-transform: capitalize;
+      color: $color--primary-blue;
+      &:hover {
+        text-decoration: none;
+        border-bottom: 2px solid $color--primary-blue;
+      }
+    }
+
+    span.logo {
+      font-family: $font--franklin-gothic;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+
+    span.special {
+      font-family: $font--franklin-gothic;
+      font-weight: 800;
+      text-transform: lowercase;
+      font-style: italic;
     }
   }
 
   .main-menu-container {
-    border: 2px dashed blue;
+    // border: 2px dashed blue;
     width: 100%;
-    display: none;
+    display: flex;
+    justify-content: flex-end;
     ul {
       list-style-type: none;
       display: flex;
       justify-content: flex-end;
       li {
-        margin: 0 1.5rem;
+        margin: 0 1.0rem;
         a {
           text-decoration: none;
-          font-weight: 300;
+          font-weight: 500;
+          font-size: 1.25rem;
           text-transform: capitalize;
+          color: $color--primary-blue;
           &:hover {
-            // border-bottom: 2px solid $colors--main-purple;
-          }
-
-          &.large {
-            // background-color: $colors--main-purple;
-            color: white;
-            padding: 1.35rem 2.35rem;
-            // border: 2px solid $colors--main-purple;
-            // -webkit-text-stroke: 0.25px white;
-
-            &:hover {
-              background-color: white;
-              // color: $colors--main-purple;
-              // -webkit-text-stroke: 0.5px $colors--main-purple;
-              transition: all 250ms ease;
-            }
+            border-bottom: 3px solid $color--primary-blue;
           }
         }
+      }
+    }
+
+    .dark-mode-button {
+      position: relative;
+      img {
+        width: 100%;
+        max-width: 30px;
+        height: auto;
+        padding: 5px 1rem 0;
       }
     }
   }

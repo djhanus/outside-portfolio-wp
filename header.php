@@ -12,11 +12,8 @@
     <div class="container">
 
       <div class="logo-container">
-        <a href="<?=home_url()?>">
-          <span class="brand"><?=bloginfo('name');?></span>
-        </a>
+        <a href="<?php echo site_url(); ?>"<span class="logo"><?=bloginfo('name');?></span></a> is a design studio and graphic company sepcializing in <span class="special">design</span>.
       </div>
-      <a href="#" class="header-navigation-button"><span></span></a>
 
       <div class="main-menu-container">
         <?php
@@ -24,6 +21,11 @@
           'theme_location'  => 'primary-menu'
         ));
         ?>
+
+        <div class="dark-mode-button">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/temp/pill.png" alt="darkmode-btn">
+        </div>
+        
       </div>
 
     </div>

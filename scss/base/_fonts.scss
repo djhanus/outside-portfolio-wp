@@ -1,11 +1,13 @@
 body, p, ul, ol, section, div {
-  // font-family: $font-body;
-  font-size: 18px;
+  font-family: $font--franklin-gothic;
+  font-size: 24px;
   line-height: 1.5;
   font-weight: 300;
+  color: $color--primary-blue;
 }
 
 a {
+  font-family: $font--franklin-gothic;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
@@ -18,13 +20,12 @@ a {
 
 p {
   font-size: 18px;
-  // font-family: $font-body;
-  // color: $colors--text-gray;
+  font-family: $font-body;
+  color: $color--primary-blue;
   font-weight: 300;
   letter-spacing: 0.75px;
-  // -webkit-text-stroke: 0.25px $colors--text-gray;
   @include media ('<desktop') {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -41,8 +42,8 @@ ul, ol {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  // font-family: $font-body;
-  // color: $black;
+  font-family: $font--franklin-gothic;
+  color: $color--primary-blue;
 }
 
 .pre-title {
