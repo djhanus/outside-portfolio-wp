@@ -1,12 +1,12 @@
 <?php get_header();
   if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-  <section class="home--featured-image">
+  <!-- <section class="home--featured-image">
     <div class="container">
       <div class="featured-wrapper">
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="home--intro">
     <div class="container">
