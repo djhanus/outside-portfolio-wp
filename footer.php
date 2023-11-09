@@ -6,7 +6,10 @@
     </div>
 
     <div class="links-container">
-      link 1 link 2
+      <ul>
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+      </ul>
     </div>
 
   </div>

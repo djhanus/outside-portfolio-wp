@@ -211,6 +211,22 @@ footer .container .links-container {
   color: #FFFFFF;
   font-size: 2.5rem;
 }
+footer .container .links-container ul {
+  display: flex;
+}
+footer .container .links-container ul li {
+  padding: 0 1rem;
+}
+footer .container .links-container ul li a {
+  color: white;
+  font-weight: 100;
+}
+footer .container .links-container ul li a:after {
+  content: "→";
+  right: 0;
+  padding-right: 15px;
+  font-size: 1.5rem;
+}
 
 header {
   padding: 0;
@@ -480,13 +496,19 @@ section.home--intro .text-container {
   text-align: center;
 }
 
+section.home--logos img {
+  display: block;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 section.home--portfolio .portfolio-wrapper {
   border: 2px dashed #CCC;
   padding: 2rem;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -504,6 +526,21 @@ section.home--portfolio .portfolio-wrapper .portfolio-item img {
   width: 100%;
   height: auto;
   margin-bottom: 0.5rem;
+}
+section.home--portfolio .portfolio-wrapper .portfolio-item:nth-of-type(1) {
+  padding: 0 4rem;
+}
+section.home--portfolio .portfolio-wrapper .portfolio-item:nth-of-type(2) {
+  padding: 4rem 0;
+}
+section.home--portfolio .portfolio-wrapper .portfolio-item:nth-of-type(3) {
+  padding: 0 4rem;
+}
+section.home--portfolio .portfolio-wrapper .portfolio-item:nth-of-type(4) {
+  padding: 0rem;
+}
+section.home--portfolio .portfolio-wrapper .portfolio-item img {
+  width: 100%;
 }
 section.home--portfolio .portfolio-wrapper .portfolio-item div.caption {
   font-family: "franklin-gothic-urw", sans-serif;

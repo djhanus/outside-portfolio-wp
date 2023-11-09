@@ -57,6 +57,12 @@
     </div>
   </section>
 
+  <section class="home--logos">
+    <div class="container">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/temp/logos.png" alt="">
+    </div>
+  </section>
+
   <section class="home--intro">
     <div class="container">
       <div class="feature-container">
