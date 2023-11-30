@@ -4,10 +4,10 @@
     "fields": [
         {
             "key": "field_65678bec9fe7e",
-            "label": "Sandbox",
+            "label": "Sandbox Feature",
             "name": "sandbox",
             "aria-label": "",
-            "type": "text",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,11 +16,16 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         },
         {
             "key": "field_65677f939399c",
@@ -70,6 +75,26 @@
             "layout": "block",
             "sub_fields": [
                 {
+                    "key": "field_6568d454963c4",
+                    "label": "Section Title",
+                    "name": "section_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
                     "key": "field_65678c8a493c8",
                     "label": "Logos - Large Grid Layout",
                     "name": "logos_large",
@@ -79,7 +104,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -104,7 +129,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -137,7 +162,7 @@
             },
             "default_value": "",
             "maxlength": "",
-            "rows": 5,
+            "rows": 8,
             "placeholder": "",
             "new_lines": ""
         },
@@ -160,9 +185,9 @@
                 {
                     "key": "field_65678cf9260b9",
                     "label": "Main Text",
-                    "name": "paragraph",
+                    "name": "main_text",
                     "aria-label": "",
-                    "type": "textarea",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -172,10 +197,10 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "placeholder": "",
-                    "new_lines": ""
+                    "tabs": "visual",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
                 },
                 {
                     "key": "field_65678d05260ba",
@@ -192,9 +217,9 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
+                    "tabs": "visual",
+                    "toolbar": "basic",
+                    "media_upload": 0,
                     "delay": 0
                 }
             ]
@@ -205,7 +230,7 @@
             "name": "simple_sandbox",
             "aria-label": "",
             "type": "wysiwyg",
-            "instructions": "",
+            "instructions": "This area will accept any basic text, HTML, or third-party code snippets.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -238,5 +263,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1701285215
+    "modified": 1701368936
 }

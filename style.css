@@ -8,6 +8,7 @@ body {
   overflow-x: hidden;
   margin: 0 auto;
   color: blue;
+  background-color: white;
 }
 
 .cf::after {
@@ -93,6 +94,9 @@ h1, h2, h3, h4, h5, h6 {
 .section-title {
   color: blue;
   font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  display: block;
 }
 
 h1 {
@@ -191,10 +195,8 @@ h6 {
 }
 
 footer {
-  background-color: #0044FF;
   padding: 1rem 0;
   height: auto;
-  color: #FFFFFF;
 }
 footer .container {
   padding: 0;
@@ -205,22 +207,32 @@ footer .container {
   align-items: center;
 }
 footer .container .logo-container {
-  color: #FFFFFF;
   font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+}
+footer .container .logo-container .year {
+  font-weight: bold;
+}
+footer .container .logo-container .location {
+  font-weight: bold;
 }
 footer .container .links-container {
-  color: #FFFFFF;
   font-size: 2.5rem;
 }
 footer .container .links-container ul {
   display: flex;
+  flex-direction: column;
 }
 footer .container .links-container ul li {
   padding: 0 1rem;
 }
 footer .container .links-container ul li a {
-  color: white;
+  color: blue;
   font-weight: 100;
+  text-transform: capitalize;
+  text-decoration: underline;
 }
 footer .container .links-container ul li a:after {
   content: "→";
@@ -309,7 +321,7 @@ header .main-menu-container ul li {
 header .main-menu-container ul li a {
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
   color: #0044FF;
 }
@@ -490,11 +502,10 @@ section.flex--hero-banner .container .text-container p {
   font-style: italic;
 }
 
-section.home--sandbox .featured-wrapper {
-  border: 2px solid #0044FF;
-  border-radius: 5px;
-  height: 550px;
-  width: auto;
+section.home--sandbox .featured-wrapper img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
 }
 
 section.home--portfolio .portfolio-wrapper {
@@ -594,13 +605,6 @@ section.about-us .col-2 ul li:before {
   left: 0;
   padding-right: 15px;
   font-size: 2.5rem;
-}
-
-section.home--sandbox .featured-wrapper {
-  border: 2px solid #0044FF;
-  border-radius: 5px;
-  height: 550px;
-  width: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,10 @@
 section.home--sandbox {
   .featured-wrapper {
-    border: 2px solid $color--primary-blue;
-    border-radius: 5px;
-    height: 550px;
-    width: auto;
+    img {
+      display: block;
+      margin: 0 auto;
+      height: auto;
+    }
   }
 }
 
@@ -69,12 +70,28 @@ section.home--logos {
     max-width: 1080px;
     margin: 0 auto;
   }
+  // .desktop {
+  //   @include media ('=>desktop') {
+  //     display: block;
+  //     border: 2px dashed purple;
+  //   }
+  //   @include media ('<desktop') {
+  //     display: none;
+  //   }
+  // }
+  // .mobile {
+  //   @include media ('=>desktop') {
+  //     display: none;
+  //   }
+  //   @include media ('<desktop') {
+  //     display: block;
+  //   }
+  // }
 }
 
 
 section.home--mission {
   padding: 4rem 2rem;
-
  .text-container {
     max-width: 1080px;
     margin: 0 auto;
@@ -122,15 +139,5 @@ section.about-us {
         }
       }
     }
-  }
-}
-
-
-section.home--sandbox {
-  .featured-wrapper {
-    border: 2px solid $color--primary-blue;
-    border-radius: 5px;
-    height: 550px;
-    width: auto;
   }
 }

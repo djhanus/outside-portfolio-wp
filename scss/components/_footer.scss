@@ -1,8 +1,6 @@
 footer {
-  background-color: $color--primary-blue;
   padding: 1rem 0;
   height: auto;
-  color: $white;
 
   .container {
     padding: 0;
@@ -13,19 +11,30 @@ footer {
     align-items: center;
 
     .logo-container {
-      color: $white;
       font-size: 2.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: black;
+      .year {
+        font-weight: bold;
+      }
+      .location {
+        font-weight: bold;
+      }
     }
+
     .links-container {
-      color: $white;
       font-size: 2.5rem;
       ul {
         display: flex;
+        flex-direction: column;
         li {
           padding: 0 1rem;
           a {
-            color: white;
+            color: blue;
             font-weight: 100;
+            text-transform: capitalize;
+            text-decoration: underline;
             &:after {
               content: "→";
               right: 0;
@@ -37,6 +46,4 @@ footer {
       }
     }
   }
-
-
 }

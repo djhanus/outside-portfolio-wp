@@ -2,7 +2,13 @@
   <div class="container">
 
     <div class="logo-container">
-      &copy; <?php bloginfo('name'); ?>
+      <?php bloginfo('name'); ?>
+      <div class="year">
+        <?php echo get_field('year', 'options'); ?>
+      </div>
+      <div class="location">
+        <?php echo get_field('location', 'options'); ?>
+      </div>
     </div>
 
     <div class="links-container">

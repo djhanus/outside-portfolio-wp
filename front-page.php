@@ -4,7 +4,7 @@
   <section class="home--sandbox">
     <div class="container">
       <div class="featured-wrapper">
-        sandbox
+        <img src="<?php echo get_field('sandbox'); ?>" alt="">
       </div>
     </div>
   </section>
@@ -39,16 +39,21 @@
 
   <section class="home--logos">
     <div class="container">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/temp/logos.png" alt="">
+      <?php
+      $logos = get_field('logos');
+      if( $logos ): ?>
+          <div class="section-title">	<?php echo $logos['section_title']; ?></div>
+          <img src="<?php echo esc_url( $logos['logos_large'] ); ?>" class="desktop" />
+          <img src="<?php echo esc_url( $logos['logos_narrow'] ); ?>" class="mobile" />
+      <?php endif; ?>
     </div>
   </section>
 
 
-
   <section class="home--mission">
     <div class="container">
-      <div class="featured-wrapper">
-        <p>Sed vitae sem gravida, faucibus lorem in, vulputate nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse dolor sapien, volutpat sed volutpat eu, interdum sed orci.</p>
+      <div class="text-container">
+        <?php echo get_field('mission_statement'); ?>
       </div>
     </div>
   </section>
@@ -57,19 +62,16 @@
 
   <section class="about-us">
     <div class="container">
-      <div class="col-1">
-        <p>Sed vitae sem gravida, faucibus lorem in, vulputate nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse dolor sapien, volutpat sed volutpat eu, interdum sed orci.</p>
-        <p>vel facilisis turpis orci ut elit. Proin enim urna, lobortis et congue consequat, bibendum ut turpis. Nullam tempus mauris magna, in vehicula tortor efficitur at. Fusce ut massa in lectus vestibulum.</p>
-      </div>
-      <div class="col-2">
-        <p>What we do:</p>
-        <ul>
-          <li>list item</li>
-          <li>list item</li>
-          <li>list item</li>
-          <li>list item</li>
-        </ul>
-      </div>
+      <?php
+      $aboutus = get_field('about_us');
+      if( $aboutus ): ?>
+        <div class="col-1">
+          <?php echo $aboutus['main_text']; ?>
+        </div>
+        <div class="col-2">
+          <?php echo $aboutus['feature_list']; ?>
+        </div>
+      <?php endif; ?>
     </div>
   </section>
 
@@ -78,7 +80,7 @@
   <section class="home--sandbox-simple">
     <div class="container">
       <div class="featured-wrapper">
-        sandbox simple
+        <?php echo get_field('simple_sandbox'); ?>
       </div>
     </div>
   </section>
