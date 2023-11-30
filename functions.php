@@ -11,7 +11,7 @@ function enqueue_parent_styles() {
 add_action('wp_enqueue_scripts', 'enqueue_parent_styles');
 
 require_once(THEME_PATH . '/lib/acf.php');
-// require_once(THEME_PATH . '/lib/cpt.php');
+require_once(THEME_PATH . '/lib/cpt.php');
 require_once(THEME_PATH . '/lib/comments.php');
 require_once(THEME_PATH . '/lib/theme.php');
 
@@ -27,7 +27,5 @@ function write_log(...$log) {
   error_log(implode(' ', $log));
 }
 
-// Remove WYSIWYG Editor from Page post types
-add_action( 'init', function() {
-    remove_post_type_support( 'page', 'editor' );
-}, 99);
+
+add_theme_support( 'post-thumbnails', array( 'post','portfolio' ) );

@@ -21,10 +21,9 @@
                 setup_postdata($post); ?>
                 <div class="portfolio-item">
                   <a href="<?php the_permalink(); ?>">
-                    <?php
-                    $image_id = get_post_thumbnail_id();
-                    $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE); ?>
-                    <img src="<?php echo $image_alt; ?>">
+                    <?php $thumbnailID = get_post_thumbnail_id(get_the_ID());
+                    $altText = get_post_meta($thumbnailID , '_wp_attachment_image_alt', true); ?>
+                    <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php echo $altText; ?>">
                   </a>
                   <div class="caption"><?php the_title(); ?></div>
                 </div>

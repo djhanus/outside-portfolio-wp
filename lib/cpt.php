@@ -1,11 +1,11 @@
 <?php
 
-add_action('init', 'create_testimonials_posttype', 0);
-function create_testimonials_posttype() {
-  $label = 'Testimonial';
-  $plural_label = 'Testimonials';
+add_action('init', 'create_portfolio_posttype', 0);
+function create_portfolio_posttype() {
+  $label = 'Portfolio';
+  $plural_label = 'Portfolio';
 
-  $testimonial = array(
+  $portfolio = array(
     'label'                 => $label,
     'description'           => 'Listing '.$plural_label,
     'labels'                => array(
@@ -37,14 +37,14 @@ function create_testimonials_posttype() {
       'items_list_navigation' => $plural_label.' list navigation',
       'filter_items_list'     => 'Filter '.$label.' list',
     ),
-    'supports'              => array('editor','excerpt','thumbnail','custom-fields', 'title', 'revisions'),
+    'supports'              => array('editor','thumbnail','excerpt','title', 'revisions'),
     // 'taxonomies'            => array('category'),
     'hierarchical'          => false,
     'public'                => true,
     'show_ui'               => true,
     'show_in_menu'          => true,
     'menu_position'         => null,
-    'menu_icon'             => 'dashicons-format-quote', //https://developer.wordpress.org/resource/dashicons/
+    'menu_icon'             => 'dashicons-portfolio', //https://developer.wordpress.org/resource/dashicons/
     'show_in_admin_bar'     => true,
     'show_in_nav_menus'     => true,
     'can_export'            => true,
@@ -55,5 +55,5 @@ function create_testimonials_posttype() {
     'rewrite' 							=> true,
     'with_front'            => false
   );
-  register_post_type('testimonial', $testimonial);
+  register_post_type('portfolio', $portfolio);
 }

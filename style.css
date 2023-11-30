@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
   margin: 0 auto;
   color: blue;
-  background-color: white;
+  background-color: #fafaf4;
 }
 
 .cf::after {
@@ -37,7 +37,7 @@ section {
   max-width: 1260px;
   height: auto;
   position: relative;
-  padding: 1rem 4rem;
+  padding: 2rem 0rem;
   margin: 0 auto;
   border: 2px dotted red;
 }
@@ -47,7 +47,7 @@ body, p, ul, ol, section, div {
   font-size: 24px;
   line-height: 1.5;
   font-weight: 300;
-  color: #0044FF;
+  color: #0052f1;
 }
 
 a {
@@ -55,7 +55,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  color: #000000;
+  color: #231f20;
 }
 a:hover {
   text-decoration: underline;
@@ -65,7 +65,7 @@ a:hover {
 p {
   font-size: 18px;
   font-family: "franklin-gothic-urw", sans-serif;
-  color: #0044FF;
+  color: #0052f1;
   font-weight: 300;
   letter-spacing: 0.75px;
 }
@@ -88,7 +88,7 @@ ul li, ol li {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "franklin-gothic-urw", sans-serif;
-  color: #0044FF;
+  color: #0052f1;
 }
 
 .section-title {
@@ -244,14 +244,14 @@ footer .container .links-container ul li a:after {
 header {
   padding: 0;
   margin: 0;
-  background-color: #FFFFFF;
+  background-color: #fafaf4;
 }
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 @media (max-width: 1023px) {
   header .container {
@@ -260,43 +260,45 @@ header .container {
 }
 header .logo-container {
   position: relative;
-  font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 300;
   font-size: 2rem;
   line-height: 1.25;
-  color: #0044FF;
+  color: #0052f1;
 }
 header .logo-container a {
-  font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 500;
   text-transform: capitalize;
-  color: #0044FF;
+  color: #0052f1;
 }
 header .logo-container a:hover {
   text-decoration: none;
-  border-bottom: 2px solid #0044FF;
+  border-bottom: 2px solid #0052f1;
 }
 header .logo-container span.logo {
-  font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  color: black;
+  color: #231f20;
 }
 header .logo-container span.special1 {
-  font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 800;
   text-transform: lowercase;
   font-style: italic;
   border-bottom: 1px solid lime;
-  color: lime;
+  color: #00ff90;
 }
 header .logo-container span.special2 {
-  font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 800;
   text-transform: lowercase;
   font-style: italic;
   border-bottom: 1px solid pink;
-  color: pink;
+  color: #f394b4;
+}
+header .logo-container .special1-reveal {
+  display: none;
+  border: 2px dotted blue;
+  height: 275px;
+  width: 200px;
+  position: absolute;
 }
 header .logo-container .special1-reveal {
   display: none;
@@ -323,10 +325,10 @@ header .main-menu-container ul li a {
   font-weight: 500;
   font-size: 1.5rem;
   text-transform: capitalize;
-  color: #0044FF;
+  color: #0052f1;
 }
 header .main-menu-container ul li a:hover {
-  border-bottom: 3px solid #0044FF;
+  border-bottom: 3px solid #0052f1;
 }
 header .main-menu-container .dark-mode-button {
   position: relative;
@@ -440,16 +442,16 @@ header .main-menu-container .dark-mode-button img {
 }
 
 a {
-  color: #000000;
+  color: #231f20;
   text-decoration: none;
 }
 a:hover {
-  color: #000000;
+  color: #231f20;
 }
 
 a.btn {
-  background-color: #0044FF;
-  border: 3px solid #0044FF;
+  background-color: #0052f1;
+  border: 3px solid #0052f1;
   color: white;
   padding: 0.5rem 2rem;
   border-radius: 50px;
@@ -472,11 +474,11 @@ a.btn {
 }
 a.btn:hover {
   background-color: white;
-  color: #0044FF;
-  -webkit-text-stroke: 0.5px #000000;
+  color: #0052f1;
+  -webkit-text-stroke: 0.5px #231f20;
 }
 a.btn.arrow:hover:after {
-  color: #0044FF;
+  color: #0052f1;
 }
 a.btn.arrow:after {
   content: "→";
@@ -552,12 +554,34 @@ section.home--portfolio .portfolio-wrapper .portfolio-item div.caption {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 1.75rem;
   font-weight: 400;
+  text-align: center;
 }
 
 section.home--logos img {
   display: block;
   max-width: 1080px;
   margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  section.home--logos .desktop {
+    display: block;
+    border: 2px dashed purple;
+  }
+}
+@media (max-width: 1023px) {
+  section.home--logos .desktop {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  section.home--logos .mobile {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  section.home--logos .mobile {
+    display: block;
+  }
 }
 
 section.home--mission {
@@ -605,6 +629,42 @@ section.about-us .col-2 ul li:before {
   left: 0;
   padding-right: 15px;
   font-size: 2.5rem;
+}
+
+section.single-post {
+  height: auto;
+  padding: 8rem 0 2rem;
+  margin: 0 auto;
+}
+section.single-post .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+section.single-post .container .portfolio-container {
+  width: 63%;
+  border: 1px dotted red;
+  display: flex;
+  flex-direction: column;
+}
+section.single-post .container .portfolio-container img {
+  padding: 2rem 0;
+  width: 100%;
+  height: auto;
+}
+section.single-post .container .post-content {
+  width: 33%;
+  border: 1px dotted blue;
+}
+section.single-post .container .post-content h1.post-title {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 600;
+}
+section.single-post .container .post-content p {
+  font-size: 1.1em;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=style.css.map */

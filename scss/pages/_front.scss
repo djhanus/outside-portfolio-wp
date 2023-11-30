@@ -58,6 +58,7 @@ section.home--portfolio {
         font-family: $font--franklin-gothic;
         font-size: 1.75rem;
         font-weight: 400;
+        text-align: center;
       }
     }
   }
@@ -70,23 +71,23 @@ section.home--logos {
     max-width: 1080px;
     margin: 0 auto;
   }
-  // .desktop {
-  //   @include media ('=>desktop') {
-  //     display: block;
-  //     border: 2px dashed purple;
-  //   }
-  //   @include media ('<desktop') {
-  //     display: none;
-  //   }
-  // }
-  // .mobile {
-  //   @include media ('=>desktop') {
-  //     display: none;
-  //   }
-  //   @include media ('<desktop') {
-  //     display: block;
-  //   }
-  // }
+  .desktop {
+    @include media ('>=desktop') {
+      display: block;
+      border: 2px dashed purple;
+    }
+    @include media ('<desktop') {
+      display: none;
+    }
+  }
+  .mobile {
+    @include media ('>=desktop') {
+      display: none;
+    }
+    @include media ('<desktop') {
+      display: block;
+    }
+  }
 }
 
 

@@ -8,8 +8,8 @@ a {
 }
 
 a.btn {
-  background-color: $color--primary-blue;
-  border: 3px solid $color--primary-blue;
+  background-color: $blue;
+  border: 3px solid $blue;
   color: white;
   padding: 0.5rem 2.0rem;
   border-radius: 50px;
@@ -31,14 +31,14 @@ a.btn {
 
   &:hover {
     background-color: white;
-    color: $color--primary-blue;
+    color: $blue;
     -webkit-text-stroke: 0.5px $black;
   }
 
   &.arrow {
     &:hover {
       &:after {
-        color: $color--primary-blue;
+        color: $blue;
       }
     }
     &:after {
