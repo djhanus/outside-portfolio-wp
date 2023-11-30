@@ -16,6 +16,7 @@ header {
   }
 
   .logo-container {
+    position: relative;
     font-family: $font--franklin-gothic;
     font-weight: 300;
     font-size: 2rem;
@@ -37,14 +38,33 @@ header {
     span.logo {
       font-family: $font--franklin-gothic;
       font-weight: 500;
-      text-transform: capitalize;
+      text-transform: uppercase;
+      color: black;
     }
 
-    span.special {
+    span.special1 {
       font-family: $font--franklin-gothic;
       font-weight: 800;
       text-transform: lowercase;
       font-style: italic;
+      border-bottom: 1px solid lime;
+      color: lime;
+    }
+    span.special2 {
+      font-family: $font--franklin-gothic;
+      font-weight: 800;
+      text-transform: lowercase;
+      font-style: italic;
+      border-bottom: 1px solid pink;
+      color: pink;
+    }
+
+    .special1-reveal {
+      display: none;
+      border: 2px dotted blue;
+      height: 275px;
+      width: 200px;
+      position: absolute;
     }
   }
 

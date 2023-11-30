@@ -12,7 +12,23 @@
     <div class="container">
 
       <div class="logo-container">
-        <a href="<?php echo site_url(); ?>"<span class="logo"><?=bloginfo('name');?></span></a> is a design studio and graphic company sepcializing in <span class="special">design</span>.
+        <a href="<?php echo site_url(); ?>">
+          <span class="logo">Outside</span>
+        </a>
+        is a
+        <?php echo get_field('madlib_noun', 'options'); ?>
+        <?php echo get_field('madlib_verb', 'options'); ?>
+        in
+        <span class="special1"><?php echo get_field('madlib_special1', 'options'); ?></span>
+        and
+        <span class="special2"><?php echo get_field('madlib_special2', 'options'); ?></span>.
+
+        <div class="special1-reveal">
+          <img src="<?php echo get_field('madlib_special1_reveal', 'options'); ?>">
+        </div>
+        <div class="special1-reveal">
+          <img src="<?php echo get_field('madlib_special1_reveal', 'options'); ?>">
+        </div>
       </div>
 
       <div class="main-menu-container">

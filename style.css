@@ -247,6 +247,7 @@ header .container {
   }
 }
 header .logo-container {
+  position: relative;
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 300;
   font-size: 2rem;
@@ -266,13 +267,31 @@ header .logo-container a:hover {
 header .logo-container span.logo {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 500;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  color: black;
 }
-header .logo-container span.special {
+header .logo-container span.special1 {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 800;
   text-transform: lowercase;
   font-style: italic;
+  border-bottom: 1px solid lime;
+  color: lime;
+}
+header .logo-container span.special2 {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 800;
+  text-transform: lowercase;
+  font-style: italic;
+  border-bottom: 1px solid pink;
+  color: pink;
+}
+header .logo-container .special1-reveal {
+  display: none;
+  border: 2px dotted blue;
+  height: 275px;
+  width: 200px;
+  position: absolute;
 }
 header .main-menu-container {
   width: 100%;
