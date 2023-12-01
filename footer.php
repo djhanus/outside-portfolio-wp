@@ -12,10 +12,21 @@
     </div>
 
     <div class="links-container">
-      <ul>
-        <li><a href="#">link 1</a></li>
-        <li><a href="#">link 2</a></li>
-      </ul>
+      <?php if( have_rows('links', 'options') ): ?>
+        <ul>
+      	<?php while( have_rows('links', 'options') ): the_row();?>
+          <?php
+          $link = get_sub_field('link');
+          if( $link ):
+              $link_url = $link['url'];
+              $link_title = $link['title'];
+              $link_target = $link['target'] ? $link['target'] : '_self';
+              ?>
+              <li><a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a></li>
+          <?php endif; ?>
+      	<?php endwhile; ?>
+        </ul>
+      <?php endif; ?>
     </div>
 
   </div>
