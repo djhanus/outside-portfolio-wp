@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: up6c45217202311.db.45217202.1c9.hostedresource.net:3312
--- Generation Time: Dec 01, 2023 at 05:45 PM
+-- Generation Time: Dec 01, 2023 at 05:49 PM
 -- Server version: 8.0.33-25
 -- PHP Version: 8.2.11
 
@@ -196,7 +196,7 @@ INSERT INTO `wp_1arvhn873y_options` (`option_id`, `option_name`, `option_value`,
 (99, 'initial_db_version', '55853', 'yes'),
 (100, 'wp_1arvhn873y_user_roles', 'a:5:{s:13:\"administrator\";a:2:{s:4:\"name\";s:13:\"Administrator\";s:12:\"capabilities\";a:61:{s:13:\"switch_themes\";b:1;s:11:\"edit_themes\";b:1;s:16:\"activate_plugins\";b:1;s:12:\"edit_plugins\";b:1;s:10:\"edit_users\";b:1;s:10:\"edit_files\";b:1;s:14:\"manage_options\";b:1;s:17:\"moderate_comments\";b:1;s:17:\"manage_categories\";b:1;s:12:\"manage_links\";b:1;s:12:\"upload_files\";b:1;s:6:\"import\";b:1;s:15:\"unfiltered_html\";b:1;s:10:\"edit_posts\";b:1;s:17:\"edit_others_posts\";b:1;s:20:\"edit_published_posts\";b:1;s:13:\"publish_posts\";b:1;s:10:\"edit_pages\";b:1;s:4:\"read\";b:1;s:8:\"level_10\";b:1;s:7:\"level_9\";b:1;s:7:\"level_8\";b:1;s:7:\"level_7\";b:1;s:7:\"level_6\";b:1;s:7:\"level_5\";b:1;s:7:\"level_4\";b:1;s:7:\"level_3\";b:1;s:7:\"level_2\";b:1;s:7:\"level_1\";b:1;s:7:\"level_0\";b:1;s:17:\"edit_others_pages\";b:1;s:20:\"edit_published_pages\";b:1;s:13:\"publish_pages\";b:1;s:12:\"delete_pages\";b:1;s:19:\"delete_others_pages\";b:1;s:22:\"delete_published_pages\";b:1;s:12:\"delete_posts\";b:1;s:19:\"delete_others_posts\";b:1;s:22:\"delete_published_posts\";b:1;s:20:\"delete_private_posts\";b:1;s:18:\"edit_private_posts\";b:1;s:18:\"read_private_posts\";b:1;s:20:\"delete_private_pages\";b:1;s:18:\"edit_private_pages\";b:1;s:18:\"read_private_pages\";b:1;s:12:\"delete_users\";b:1;s:12:\"create_users\";b:1;s:17:\"unfiltered_upload\";b:1;s:14:\"edit_dashboard\";b:1;s:14:\"update_plugins\";b:1;s:14:\"delete_plugins\";b:1;s:15:\"install_plugins\";b:1;s:13:\"update_themes\";b:1;s:14:\"install_themes\";b:1;s:11:\"update_core\";b:1;s:10:\"list_users\";b:1;s:12:\"remove_users\";b:1;s:13:\"promote_users\";b:1;s:18:\"edit_theme_options\";b:1;s:13:\"delete_themes\";b:1;s:6:\"export\";b:1;}}s:6:\"editor\";a:2:{s:4:\"name\";s:6:\"Editor\";s:12:\"capabilities\";a:34:{s:17:\"moderate_comments\";b:1;s:17:\"manage_categories\";b:1;s:12:\"manage_links\";b:1;s:12:\"upload_files\";b:1;s:15:\"unfiltered_html\";b:1;s:10:\"edit_posts\";b:1;s:17:\"edit_others_posts\";b:1;s:20:\"edit_published_posts\";b:1;s:13:\"publish_posts\";b:1;s:10:\"edit_pages\";b:1;s:4:\"read\";b:1;s:7:\"level_7\";b:1;s:7:\"level_6\";b:1;s:7:\"level_5\";b:1;s:7:\"level_4\";b:1;s:7:\"level_3\";b:1;s:7:\"level_2\";b:1;s:7:\"level_1\";b:1;s:7:\"level_0\";b:1;s:17:\"edit_others_pages\";b:1;s:20:\"edit_published_pages\";b:1;s:13:\"publish_pages\";b:1;s:12:\"delete_pages\";b:1;s:19:\"delete_others_pages\";b:1;s:22:\"delete_published_pages\";b:1;s:12:\"delete_posts\";b:1;s:19:\"delete_others_posts\";b:1;s:22:\"delete_published_posts\";b:1;s:20:\"delete_private_posts\";b:1;s:18:\"edit_private_posts\";b:1;s:18:\"read_private_posts\";b:1;s:20:\"delete_private_pages\";b:1;s:18:\"edit_private_pages\";b:1;s:18:\"read_private_pages\";b:1;}}s:6:\"author\";a:2:{s:4:\"name\";s:6:\"Author\";s:12:\"capabilities\";a:10:{s:12:\"upload_files\";b:1;s:10:\"edit_posts\";b:1;s:20:\"edit_published_posts\";b:1;s:13:\"publish_posts\";b:1;s:4:\"read\";b:1;s:7:\"level_2\";b:1;s:7:\"level_1\";b:1;s:7:\"level_0\";b:1;s:12:\"delete_posts\";b:1;s:22:\"delete_published_posts\";b:1;}}s:11:\"contributor\";a:2:{s:4:\"name\";s:11:\"Contributor\";s:12:\"capabilities\";a:5:{s:10:\"edit_posts\";b:1;s:4:\"read\";b:1;s:7:\"level_1\";b:1;s:7:\"level_0\";b:1;s:12:\"delete_posts\";b:1;}}s:10:\"subscriber\";a:2:{s:4:\"name\";s:10:\"Subscriber\";s:12:\"capabilities\";a:2:{s:4:\"read\";b:1;s:7:\"level_0\";b:1;}}}', 'yes'),
 (101, 'fresh_site', '1', 'yes'),
-(102, 'user_count', '2', 'no'),
+(102, 'user_count', '3', 'no'),
 (104, 'sidebars_widgets', 'a:1:{s:19:\"wp_inactive_widgets\";a:0:{}}', 'yes'),
 (105, 'cron', 'a:17:{i:1701455267;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1701457934;a:1:{s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1701468852;a:1:{s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1701469524;a:1:{s:21:\"wp_update_user_counts\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1701475049;a:1:{s:27:\"wpaas_ua_check_record_count\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1701476115;a:1:{s:18:\"wp_https_detection\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1701486084;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1701493650;a:1:{s:25:\"sucuriscan_scheduled_scan\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1701495493;a:1:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1701515841;a:1:{s:22:\"mwp_update_public_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1701516458;a:1:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1701517032;a:1:{s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1701523283;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1701613405;a:1:{s:31:\"wpaas_smart_update_cleanup_hook\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:16:\"two_days_seconds\";s:4:\"args\";a:0:{}s:8:\"interval\";i:172800;}}}i:1701884960;a:1:{s:30:\"wp_delete_temp_updater_backups\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}i:1701951825;a:1:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}s:7:\"version\";i:2;}', 'yes'),
 (122, 'wpaas_cache_options_cnt', 'a:1:{i:0;i:1695220849;}', 'yes'),
@@ -476,7 +476,21 @@ INSERT INTO `wp_1arvhn873y_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_v
 (31, 2, 'wp_1arvhn873y_capabilities', 'a:1:{s:13:\"administrator\";b:1;}'),
 (32, 2, 'wp_1arvhn873y_user_level', '10'),
 (33, 2, 'dismissed_wp_pointers', ''),
-(34, 1, '_new_email', 'a:2:{s:4:\"hash\";s:32:\"95881d15547891efe389f9011564baa7\";s:8:\"newemail\";s:21:\"davidjhanus@gmail.com\";}');
+(34, 1, '_new_email', 'a:2:{s:4:\"hash\";s:32:\"95881d15547891efe389f9011564baa7\";s:8:\"newemail\";s:21:\"davidjhanus@gmail.com\";}'),
+(35, 3, 'nickname', 'david'),
+(36, 3, 'first_name', 'David'),
+(37, 3, 'last_name', 'Hanus'),
+(38, 3, 'description', ''),
+(39, 3, 'rich_editing', 'true'),
+(40, 3, 'syntax_highlighting', 'true'),
+(41, 3, 'comment_shortcuts', 'false'),
+(42, 3, 'admin_color', 'fresh'),
+(43, 3, 'use_ssl', '0'),
+(44, 3, 'show_admin_bar_front', 'true'),
+(45, 3, 'locale', ''),
+(46, 3, 'wp_1arvhn873y_capabilities', 'a:1:{s:13:\"administrator\";b:1;}'),
+(47, 3, 'wp_1arvhn873y_user_level', '10'),
+(48, 3, 'dismissed_wp_pointers', '');
 
 -- --------------------------------------------------------
 
@@ -503,7 +517,8 @@ CREATE TABLE `wp_1arvhn873y_users` (
 
 INSERT INTO `wp_1arvhn873y_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1, 'development', '$P$BnDXRCQZU0w.NEllDTfw/FpJOVpM2Y1', 'development', 'ryan.joseph.irvin@gmail.com', 'https://up6.c3e.myftpupload.com', '2023-09-20 14:40:46', '', 0, 'development'),
-(2, 'ryan-admin', '$P$B638SthI3cZa3wMFqHEsaYUzegPBtl1', 'ryan-admin', 'temp@gmail.com', '', '2023-09-20 14:51:56', '1695221516:$P$BLF6lumfWijtf0gzOEAK2hoEHmvfGq0', 0, 'Ryan');
+(2, 'ryan-admin', '$P$B638SthI3cZa3wMFqHEsaYUzegPBtl1', 'ryan-admin', 'temp@gmail.com', '', '2023-09-20 14:51:56', '1695221516:$P$BLF6lumfWijtf0gzOEAK2hoEHmvfGq0', 0, 'Ryan'),
+(3, 'david', '$P$BeAafQCG2iB.IzqpN.AoCOcniNVUuH1', 'david', 'toast@duck.com', '', '2023-12-01 17:47:26', '1701452846:$P$BMk461YAe.Q5y5tMFL1I7Qdz.Ly2Yi1', 0, 'David Hanus');
 
 -- --------------------------------------------------------
 
@@ -1705,7 +1720,7 @@ ALTER TABLE `wp_1arvhn873y_links`
 -- AUTO_INCREMENT for table `wp_1arvhn873y_options`
 --
 ALTER TABLE `wp_1arvhn873y_options`
-  MODIFY `option_id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2071;
+  MODIFY `option_id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2149;
 
 --
 -- AUTO_INCREMENT for table `wp_1arvhn873y_postmeta`
@@ -1741,13 +1756,13 @@ ALTER TABLE `wp_1arvhn873y_term_taxonomy`
 -- AUTO_INCREMENT for table `wp_1arvhn873y_usermeta`
 --
 ALTER TABLE `wp_1arvhn873y_usermeta`
-  MODIFY `umeta_id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `umeta_id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT for table `wp_1arvhn873y_users`
 --
 ALTER TABLE `wp_1arvhn873y_users`
-  MODIFY `ID` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `wp_1arvhn873y_wpaas_activity_log`
