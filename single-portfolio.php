@@ -1,4 +1,4 @@
-<?php get_header();
+<?php get_header('short');
   if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <section class="single-post">

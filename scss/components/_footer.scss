@@ -3,23 +3,30 @@ footer {
   height: auto;
 
   .container {
-    padding: 0;
+    padding: 2rem;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: calc(100% - 4rem);
 
     .logo-container {
-      font-size: 2.5rem;
+      font-size: 1.85rem;
       font-weight: bold;
       text-transform: uppercase;
-      color: black;
+      color: $black;
+      font-family: "PitchSansBold";
+      line-height: 1.25;
       .year {
         font-weight: bold;
+        font-size: 1.85rem;
+        line-height: 1.25;
       }
       .location {
         font-weight: bold;
+        font-size: 1.85rem;
+        line-height: 1.25;
       }
     }
 

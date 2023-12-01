@@ -1,17 +1,17 @@
 section.single-post {
   height: auto;
-  padding: 8rem 0 2rem;
+  padding: 4rem 0 16rem;
   margin: 0 auto;
 
   .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0;
+    padding: 2rem;
+    width: calc(100% - 4rem);
 
     .portfolio-container {
-      width: 63%;
-      border: 1px dotted red;
+      width: 65%;
       display: flex;
       flex-direction: column;
       img {
@@ -22,16 +22,15 @@ section.single-post {
     }
 
     .post-content {
-      width: 33%;
-      border: 1px dotted blue;
+      width: 30%;
       h1.post-title {
-        font-size: 2rem;
-        line-height: 1.1;
-        font-weight: 600;
+        font-size: 2.25rem;
+        line-height: 1.25;
+        font-family: "PitchSansBold";
       }
       p {
-        font-size: 1.1em;
-        line-height: 1.5;
+        font-size: 1.15em;
+        line-height: 1.25;
       }
     }
 

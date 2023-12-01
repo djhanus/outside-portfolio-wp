@@ -7,8 +7,9 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   margin: 0 auto;
-  color: blue;
+  color: #0052f1;
   background-color: #fafaf4;
+  font-family: "LarsseitRegular";
 }
 
 .cf::after {
@@ -23,7 +24,7 @@ body {
 }
 
 section {
-  padding: 4rem 0;
+  padding: 2rem 0;
   margin: 0 auto;
 }
 @media (max-width: 1023px) {
@@ -34,16 +35,32 @@ section {
 
 .container {
   width: 100%;
-  max-width: 1260px;
+  max-width: 1440px;
   height: auto;
   position: relative;
   padding: 2rem 0rem;
   margin: 0 auto;
-  border: 2px dotted red;
 }
 
+@font-face {
+  font-family: "PitchSansBold";
+  src: url("fonts/pitch-sans-bold.woff2") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "LarsseitRegular";
+  src: url("fonts/LarsseitRegular/font.woff2") format("woff2"), url("fonts/LarsseitRegular/font.woff") format("woff");
+}
+@font-face {
+  font-family: "LarsseitMedium";
+  src: url("fonts/LarsseitMedium/font.woff2") format("woff2"), url("fonts/LarsseitMedium/font.woff") format("woff");
+}
+@font-face {
+  font-family: "LarsseitBold";
+  src: url("fonts/LarsseitBold/font.woff2") format("woff2"), url("fonts/LarsseitBold/font.woff") format("woff");
+}
 body, p, ul, ol, section, div {
-  font-family: "franklin-gothic-urw", sans-serif;
+  font-family: "LarsseitRegular";
   font-size: 24px;
   line-height: 1.5;
   font-weight: 300;
@@ -51,7 +68,7 @@ body, p, ul, ol, section, div {
 }
 
 a {
-  font-family: "franklin-gothic-urw", sans-serif;
+  font-family: "LarsseitRegular";
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
@@ -63,10 +80,9 @@ a:hover {
 }
 
 p {
+  font-family: "LarsseitRegular";
   font-size: 18px;
-  font-family: "franklin-gothic-urw", sans-serif;
   color: #0052f1;
-  font-weight: 300;
   letter-spacing: 0.75px;
 }
 @media (max-width: 1023px) {
@@ -81,13 +97,14 @@ ul, ol {
   list-style-type: none;
 }
 ul li, ol li {
+  font-family: "LarsseitRegular";
   margin: 0;
   font-size: inherit;
   letter-spacing: 0.75px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "franklin-gothic-urw", sans-serif;
+  font-family: "LarsseitMedium";
   color: #0052f1;
 }
 
@@ -95,8 +112,9 @@ h1, h2, h3, h4, h5, h6 {
   color: blue;
   font-size: 2rem;
   text-align: center;
-  font-weight: bold;
   display: block;
+  margin: 1rem auto 2rem;
+  font-family: "LarsseitRegular";
 }
 
 h1 {
@@ -199,24 +217,31 @@ footer {
   height: auto;
 }
 footer .container {
-  padding: 0;
+  padding: 2rem;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: calc(100% - 4rem);
 }
 footer .container .logo-container {
-  font-size: 2.5rem;
+  font-size: 1.85rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: black;
+  color: #231f20;
+  font-family: "PitchSansBold";
+  line-height: 1.25;
 }
 footer .container .logo-container .year {
   font-weight: bold;
+  font-size: 1.85rem;
+  line-height: 1.25;
 }
 footer .container .logo-container .location {
   font-weight: bold;
+  font-size: 1.85rem;
+  line-height: 1.25;
 }
 footer .container .links-container {
   font-size: 2.5rem;
@@ -251,7 +276,8 @@ header .container {
   justify-content: space-between;
   align-items: flex-start;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 2rem;
+  width: calc(100% - 4rem);
 }
 @media (max-width: 1023px) {
   header .container {
@@ -259,53 +285,70 @@ header .container {
   }
 }
 header .logo-container {
-  position: relative;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.85rem;
   line-height: 1.25;
   color: #0052f1;
+  font-family: "LarsseitRegular";
 }
 header .logo-container a {
-  font-weight: 500;
   text-transform: capitalize;
-  color: #0052f1;
 }
 header .logo-container a:hover {
   text-decoration: none;
-  border-bottom: 2px solid #0052f1;
 }
 header .logo-container span.logo {
-  font-weight: 500;
   text-transform: uppercase;
+  font-size: 2rem;
   color: #231f20;
+  font-family: "PitchSansBold";
+}
+header .logo-container.short span.logo {
+  color: #0052f1;
 }
 header .logo-container span.special1 {
-  font-weight: 800;
+  position: relative;
   text-transform: lowercase;
-  font-style: italic;
-  border-bottom: 1px solid lime;
+  border-bottom: 1px solid #00ff90;
   color: #00ff90;
 }
+header .logo-container span.special1:hover .special1-reveal {
+  display: block;
+}
+header .logo-container .special1-reveal {
+  display: none;
+  height: 500px;
+  width: 425px;
+  top: 50px;
+  left: 25px;
+  position: absolute;
+  z-index: 9999;
+}
+header .logo-container .special1-reveal img {
+  width: 100%;
+  height: auto;
+}
 header .logo-container span.special2 {
-  font-weight: 800;
+  position: relative;
   text-transform: lowercase;
-  font-style: italic;
-  border-bottom: 1px solid pink;
+  border-bottom: 1px solid #f394b4;
   color: #f394b4;
 }
-header .logo-container .special1-reveal {
-  display: none;
-  border: 2px dotted blue;
-  height: 275px;
-  width: 200px;
-  position: absolute;
+header .logo-container span.special2:hover .special2-reveal {
+  display: block;
 }
-header .logo-container .special1-reveal {
+header .logo-container .special2-reveal {
   display: none;
-  border: 2px dotted blue;
-  height: 275px;
-  width: 200px;
+  height: 500px;
+  width: 425px;
+  top: 50px;
+  left: 25px;
   position: absolute;
+  z-index: 9999;
+}
+header .logo-container .special2-reveal img {
+  width: 100%;
+  height: auto;
 }
 header .main-menu-container {
   width: 100%;
@@ -322,10 +365,10 @@ header .main-menu-container ul li {
 }
 header .main-menu-container ul li a {
   text-decoration: none;
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   text-transform: capitalize;
   color: #0052f1;
+  font-family: "LarsseitRegular";
 }
 header .main-menu-container ul li a:hover {
   border-bottom: 3px solid #0052f1;
@@ -338,107 +381,6 @@ header .main-menu-container .dark-mode-button img {
   max-width: 30px;
   height: auto;
   padding: 5px 1rem 0;
-}
-
-.gform_body {
-  margin: 2.5rem auto;
-  max-width: 600px;
-}
-.gform_body .gfield label {
-  letter-spacing: 1px;
-  color: white;
-  font-family: "franklin-gothic-urw", sans-serif;
-  font-weight: 400 !important;
-  font-size: 20px !important;
-  margin-left: 2.65rem;
-}
-.gform_body .gfield input {
-  color: white !important;
-  padding: 1.25rem 2rem;
-}
-.gform_body .gfield input[type=text], .gform_body .gfield input[type=tel],
-.gform_body .gfield input[type=email], .gform_body .gfield textarea {
-  background-color: transparent;
-  border-radius: 50px;
-  border: 2px solid white;
-  color: white !important;
-}
-.gform_body .gfield legend {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.gform_wrapper.gravity-theme .gfield input.large, .gform_wrapper.gravity-theme .gfield select.large {
-  background-color: transparent;
-  border-radius: 50px;
-  border: 2px solid white;
-  letter-spacing: 1px;
-  color: white;
-  font-family: "franklin-gothic-urw", sans-serif;
-  font-weight: 400 !important;
-  font-size: 20px;
-}
-
-.gform_wrapper.gravity-theme .gfield textarea {
-  letter-spacing: 1px;
-  color: white !important;
-  font-family: "franklin-gothic-urw", sans-serif;
-  font-weight: 400 !important;
-  font-size: 20px;
-  padding: 1rem 2.5rem 0.75rem 2.5rem;
-}
-
-.gform_wrapper.gravity-theme .gfield input.large, .gform_wrapper.gravity-theme .gfield select.large {
-  letter-spacing: 1px;
-  color: white;
-  font-family: "franklin-gothic-urw", sans-serif;
-  font-weight: 400 !important;
-  padding: 1rem 2.5rem 0.75rem 2.5rem;
-  line-height: 1;
-}
-
-#gform_wrapper_1 .gform_fields .gfield input::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  font-family: "franklin-gothic-urw", sans-serif;
-  font-weight: 400 !important;
-  letter-spacing: 1px;
-  color: white;
-  font-size: 1.25rem;
-}
-
-#gform_wrapper_1 .gform_fields .gfield input::-moz-placeholder {
-  /* Firefox 19+ */
-  color: white;
-}
-
-#gform_wrapper_1 .gform_fields .gfield input:-ms-input-placeholder {
-  /* IE 10+ */
-  color: white;
-}
-
-#gform_wrapper_1 .gform_fields .gfield input:-moz-placeholder {
-  /* Firefox 18- */
-  color: white;
-}
-
-.gform_footer input.button, .gform_footer input[type=submit], .gform_page_footer input.button, .gform_page_footer input[type=submit] {
-  background-color: white;
-  padding: 0.5rem 3rem;
-  border-radius: 25px;
-  text-decoration: none;
-  margin: 0 0.5rem;
-  font-size: 20px;
-  font-family: "franklin-gothic-urw", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  white-space: nowrap;
-  margin: 0 auto;
-}
-.gform_footer input.button:hover, .gform_footer input[type=submit]:hover, .gform_page_footer input.button:hover, .gform_page_footer input[type=submit]:hover {
-  -webkit-text-stroke: 0.5px white;
-  color: white;
-  border-color: white;
 }
 
 a {
@@ -511,8 +453,7 @@ section.home--sandbox .featured-wrapper img {
 }
 
 section.home--portfolio .portfolio-wrapper {
-  border: 2px dashed #CCC;
-  padding: 2rem;
+  padding: 2rem 0;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -527,7 +468,6 @@ section.home--portfolio .portfolio-wrapper .portfolio-item {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 2px dashed #CCC;
   margin-bottom: 5rem;
 }
 section.home--portfolio .portfolio-wrapper .portfolio-item img {
@@ -551,10 +491,10 @@ section.home--portfolio .portfolio-wrapper .portfolio-item img {
   width: 100%;
 }
 section.home--portfolio .portfolio-wrapper .portfolio-item div.caption {
-  font-family: "franklin-gothic-urw", sans-serif;
   font-size: 1.75rem;
   font-weight: 400;
   text-align: center;
+  font-family: "LarsseitMedium";
 }
 
 section.home--logos img {
@@ -565,7 +505,6 @@ section.home--logos img {
 @media (min-width: 1024px) {
   section.home--logos .desktop {
     display: block;
-    border: 2px dashed purple;
   }
 }
 @media (max-width: 1023px) {
@@ -589,9 +528,8 @@ section.home--mission {
 }
 section.home--mission .text-container {
   max-width: 1080px;
-  margin: 0 auto;
-  font-family: "franklin-gothic-urw", sans-serif;
-  font-size: 2.5rem;
+  margin: 1rem auto;
+  font-size: 2rem;
   font-weight: 400;
   text-align: center;
 }
@@ -601,50 +539,69 @@ section.about-us .container {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 2rem;
+  width: calc(85% - 4rem);
 }
 section.about-us .col-1 {
-  width: 60%;
+  width: 55%;
 }
 section.about-us .col-1 p {
-  font-size: 2.25rem;
-  line-height: 1.5;
+  font-size: 2rem;
+  line-height: 1.25;
 }
 section.about-us .col-2 {
-  width: 30%;
+  width: 35%;
 }
 section.about-us .col-2 p {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 section.about-us .col-2 ul {
   margin: 0;
   padding: 0;
 }
 section.about-us .col-2 ul li {
-  line-height: 1.2;
+  line-height: 1.25;
   position: relative;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 section.about-us .col-2 ul li:before {
   content: "→";
   left: 0;
   padding-right: 15px;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
+}
+
+section.home--sandbox-simple .featured-wrapper {
+  border: 1px dotted #CCC;
+  padding: 2rem;
+  width: calc(75% - 4rem);
+  margin: 0 auto;
+  text-align: center;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.home--sandbox-simple .featured-wrapper img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
 }
 
 section.single-post {
   height: auto;
-  padding: 8rem 0 2rem;
+  padding: 4rem 0 16rem;
   margin: 0 auto;
 }
 section.single-post .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0;
+  padding: 2rem;
+  width: calc(100% - 4rem);
 }
 section.single-post .container .portfolio-container {
-  width: 63%;
-  border: 1px dotted red;
+  width: 65%;
   display: flex;
   flex-direction: column;
 }
@@ -654,17 +611,16 @@ section.single-post .container .portfolio-container img {
   height: auto;
 }
 section.single-post .container .post-content {
-  width: 33%;
-  border: 1px dotted blue;
+  width: 30%;
 }
 section.single-post .container .post-content h1.post-title {
-  font-size: 2rem;
-  line-height: 1.1;
-  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.25;
+  font-family: "PitchSansBold";
 }
 section.single-post .container .post-content p {
-  font-size: 1.1em;
-  line-height: 1.5;
+  font-size: 1.15em;
+  line-height: 1.25;
 }
 
 /*# sourceMappingURL=style.css.map */

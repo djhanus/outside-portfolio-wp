@@ -1,5 +1,6 @@
 section.home--sandbox {
   .featured-wrapper {
+    // border: 1px dotted #CCC;
     img {
       display: block;
       margin: 0 auto;
@@ -11,8 +12,7 @@ section.home--sandbox {
 
 section.home--portfolio {
   .portfolio-wrapper {
-    border: 2px dashed #CCC;
-    padding: 2rem;
+    padding: 2rem 0;
     margin: 0 auto;
 
     display: flex;
@@ -28,7 +28,6 @@ section.home--portfolio {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      border: 2px dashed #CCC;
       margin-bottom: 5rem;
 
       img {
@@ -55,10 +54,10 @@ section.home--portfolio {
       }
 
       div.caption {
-        font-family: $font--franklin-gothic;
         font-size: 1.75rem;
         font-weight: 400;
         text-align: center;
+        font-family: "LarsseitMedium";
       }
     }
   }
@@ -74,7 +73,6 @@ section.home--logos {
   .desktop {
     @include media ('>=desktop') {
       display: block;
-      border: 2px dashed purple;
     }
     @include media ('<desktop') {
       display: none;
@@ -95,9 +93,8 @@ section.home--mission {
   padding: 4rem 2rem;
  .text-container {
     max-width: 1080px;
-    margin: 0 auto;
-    font-family: $font--franklin-gothic;
-    font-size: 2.5rem;
+    margin: 1rem auto;
+    font-size: 2rem;
     font-weight: 400;
     text-align: center;
   }
@@ -110,35 +107,56 @@ section.about-us {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 2rem;
+    width: calc(85% - 4rem);
   }
 
   .col-1 {
-    width: 60%;
+    width: 55%;
     p {
-      font-size: 2.25rem;
-      line-height: 1.5;
+      font-size: 2rem;
+      line-height: 1.25;
     }
   }
 
   .col-2 {
-    width: 30%;
+    width: 35%;
     p {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
     ul {
       margin: 0;
       padding: 0;
       li {
-        line-height: 1.2;
+        line-height: 1.25;
         position: relative;
-        font-size: 2.5rem;
+        font-size: 2rem;
         &:before {
           content: "→";
           left: 0;
           padding-right: 15px;
-          font-size: 2.5rem;
+          font-size: 1.75rem;
         }
       }
+    }
+  }
+}
+
+section.home--sandbox-simple {
+  .featured-wrapper {
+    border: 1px dotted #CCC;
+    padding: 2rem;
+    width: calc(75% - 4rem);
+    margin: 0 auto;
+    text-align: center;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      display: block;
+      margin: 0 auto;
+      height: auto;
     }
   }
 }

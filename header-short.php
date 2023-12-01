@@ -11,17 +11,10 @@
   <header>
     <div class="container">
 
-      <div class="logo-container">
+      <div class="logo-container short">
         <a href="<?php echo site_url(); ?>">
           <span class="logo">Outside</span>
         </a>
-        is a
-        <?php echo get_field('madlib_noun', 'options'); ?>
-        <?php echo get_field('madlib_verb', 'options'); ?>
-        in
-        <span class="special1"><?php echo get_field('madlib_special1', 'options'); ?><div class="special1-reveal"><img src="<?php echo get_field('madlib_special1_reveal', 'options'); ?>" /></div></span>
-        and
-        <span class="special2"><?php echo get_field('madlib_special2', 'options'); ?><div class="special2-reveal"><img src="<?php echo get_field('madlib_special2_reveal', 'options'); ?>" /></div></span>.
       </div>
 
       <div class="main-menu-container">

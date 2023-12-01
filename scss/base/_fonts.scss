@@ -1,5 +1,28 @@
+// "OUTSIDE" logo font face
+@font-face {
+  font-family: "PitchSansBold";
+  src: url("fonts/pitch-sans-bold.woff2") format('woff');
+  font-weight: bold;
+}
+
+// standard body fonts
+@font-face {
+  font-family: "LarsseitRegular";
+  src: url('fonts/LarsseitRegular/font.woff2') format('woff2'), url('fonts/LarsseitRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "LarsseitMedium";
+  src: url('fonts/LarsseitMedium/font.woff2') format('woff2'), url('fonts/LarsseitMedium/font.woff') format('woff');
+}
+@font-face {
+  font-family: "LarsseitBold";
+  src: url('fonts/LarsseitBold/font.woff2') format('woff2'), url('fonts/LarsseitBold/font.woff') format('woff');
+}
+
+
+
 body, p, ul, ol, section, div {
-  font-family: $font--franklin-gothic;
+  font-family: "LarsseitRegular";
   font-size: 24px;
   line-height: 1.5;
   font-weight: 300;
@@ -7,7 +30,7 @@ body, p, ul, ol, section, div {
 }
 
 a {
-  font-family: $font--franklin-gothic;
+  font-family: "LarsseitRegular";
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
@@ -19,10 +42,9 @@ a {
 }
 
 p {
+  font-family: "LarsseitRegular";
   font-size: 18px;
-  font-family: $font-body;
   color: $blue;
-  font-weight: 300;
   letter-spacing: 0.75px;
   @include media ('<desktop') {
     font-size: 20px;
@@ -34,7 +56,7 @@ ul, ol {
   padding: 0;
   list-style-type: none;
   li {
-    // padding: 1.5rem 0;
+    font-family: "LarsseitRegular";
     margin: 0;
     font-size: inherit;
     letter-spacing: 0.75px;
@@ -42,7 +64,7 @@ ul, ol {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font--franklin-gothic;
+  font-family: "LarsseitMedium";
   color: $blue;
 }
 
@@ -50,9 +72,9 @@ h1, h2, h3, h4, h5, h6 {
   color: blue;
   font-size: 2rem;
   text-align: center;
-  font-weight: bold;
   display: block;
-  // margin: 0 auto;
+  margin: 1rem auto 2rem;
+  font-family: "LarsseitRegular";
 }
 
 h1 {

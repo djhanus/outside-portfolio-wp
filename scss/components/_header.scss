@@ -8,7 +8,8 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem;
+    width: calc(100% - 4rem);
 
     @include media ('<desktop') {
       max-width: 720px;
@@ -16,62 +17,88 @@ header {
   }
 
   .logo-container {
-    position: relative;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.85rem;
     line-height: 1.25;
     color: $blue;
-    // border: 2px dashed black;
+    font-family: "LarsseitRegular";
 
     a {
-      font-weight: 500;
       text-transform: capitalize;
-      color: $blue;
       &:hover {
         text-decoration: none;
-        border-bottom: 2px solid $blue;
       }
     }
 
     span.logo {
-      font-weight: 500;
       text-transform: uppercase;
+      font-size: 2rem;
       color: $black;
+      font-family: "PitchSansBold";
+    }
+
+    &.short {
+      span.logo {
+        color: $blue;
+      }
     }
 
     span.special1 {
-      font-weight: 800;
+      position: relative;
       text-transform: lowercase;
-      font-style: italic;
-      border-bottom: 1px solid lime;
+      border-bottom: 1px solid $green;
       color: $green;
+      &:hover {
+        .special1-reveal {
+          display: block;
+        }
+      }
     }
-    span.special2 {
-      font-weight: 800;
-      text-transform: lowercase;
-      font-style: italic;
-      border-bottom: 1px solid pink;
-      color: $pink;
+    .special1-reveal {
+      display: none;
+      // border: 2px dotted $green;
+      height: 500px;
+      width: 425px;
+      top: 50px;
+      left: 25px;
+      position: absolute;
+      z-index: 9999;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
 
-    .special1-reveal {
-      display: none;
-      border: 2px dotted blue;
-      height: 275px;
-      width: 200px;
-      position: absolute;
+    span.special2 {
+      position: relative;
+      text-transform: lowercase;
+      border-bottom: 1px solid $pink;
+      color: $pink;
+      &:hover {
+        .special2-reveal {
+          display: block;
+        }
+      }
     }
-    .special1-reveal {
+    .special2-reveal {
       display: none;
-      border: 2px dotted blue;
-      height: 275px;
-      width: 200px;
+      height: 500px;
+      width: 425px;
+      top: 50px;
+      left: 25px;
       position: absolute;
+      z-index: 9999;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
+
+
+
   }
 
   .main-menu-container {
-    // border: 2px dashed blue;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -83,10 +110,10 @@ header {
         margin: 0 1.0rem;
         a {
           text-decoration: none;
-          font-weight: 500;
-          font-size: 1.5rem;
+          font-size: 1.9rem;
           text-transform: capitalize;
           color: $blue;
+          font-family: "LarsseitRegular";
           &:hover {
             border-bottom: 3px solid $blue;
           }
