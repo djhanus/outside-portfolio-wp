@@ -27,8 +27,21 @@
         <div class="dark-mode-button">
           <img src="<?php echo get_field('dark_mode_icon','options'); ?>" alt="darkmode-btn">
         </div>
-
       </div>
+
+      <!-- HAMBURGER MENU ICON -->
+      <div class="hamburger-wrapper">
+        <div class="hamburger-menu"></div>
+      </div>
+
+      <!-- MOBILE MENU WRAPPER -->
+      <div class="mobile-menu-wrapper">
+        frjtfjygyjgf<br />
+        frjtfjygyjgf<br />
+        frjtfjygyjgf<br />
+        frjtfjygyjgf<br />
+        fmtfyfk
+      </div> <!-- /.mobile-menu-wrapper -->
 
     </div>
   </header>

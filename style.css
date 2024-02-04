@@ -27,9 +27,11 @@ section {
   padding: 2rem 0;
   margin: 0 auto;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   section {
     padding: 1rem 0;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -40,6 +42,11 @@ section {
   position: relative;
   padding: 2rem 0rem;
   margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
 }
 
 @font-face {
@@ -115,6 +122,11 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   margin: 1rem auto 2rem;
   font-family: "LarsseitRegular";
+}
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
 }
 
 h1 {
@@ -284,6 +296,11 @@ header .container {
     max-width: 720px;
   }
 }
+@media (max-width: 767px) {
+  header .container {
+    padding: 1rem 2rem;
+  }
+}
 header .logo-container {
   font-weight: 300;
   font-size: 1.85rem;
@@ -312,6 +329,11 @@ header .logo-container span.special1 {
   border-bottom: 1px solid #00ff90;
   color: #00ff90;
 }
+@media (max-width: 767px) {
+  header .logo-container span.special1 {
+    display: none;
+  }
+}
 header .logo-container span.special1:hover .special1-reveal {
   display: block;
 }
@@ -334,6 +356,11 @@ header .logo-container span.special2 {
   border-bottom: 1px solid #f394b4;
   color: #f394b4;
 }
+@media (max-width: 767px) {
+  header .logo-container span.special2 {
+    display: none;
+  }
+}
 header .logo-container span.special2:hover .special2-reveal {
   display: block;
 }
@@ -350,10 +377,25 @@ header .logo-container .special2-reveal img {
   width: 100%;
   height: auto;
 }
+@media (max-width: 767px) {
+  header .logo-container span.hide-mobile {
+    visibility: hidden;
+  }
+}
+@media (min-width: 1024px) {
+  header .logo-container span.hide-mobile {
+    visibility: visible;
+  }
+}
 header .main-menu-container {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  header .main-menu-container {
+    display: none;
+  }
 }
 header .main-menu-container ul {
   list-style-type: none;
@@ -381,6 +423,122 @@ header .main-menu-container .dark-mode-button img {
   max-width: 30px;
   height: auto;
   padding: 5px 1rem 0;
+}
+
+.hamburger-wrapper {
+  z-index: 100000;
+  position: absolute;
+  top: 23px;
+  right: 50px;
+  margin-left: auto;
+  width: 30px;
+  height: 26px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .hamburger-wrapper {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .hamburger-wrapper {
+    display: block;
+  }
+}
+
+.hamburger-menu,
+.hamburger-menu,
+.hamburger-menu {
+  width: 30px;
+  height: 4px;
+  position: relative;
+  transform: translateY(11px);
+  background: black;
+  transition: all 0ms 300ms;
+}
+.hamburger-menu:after, .hamburger-menu:before,
+.hamburger-menu:after,
+.hamburger-menu:before,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 30px;
+  height: 4px;
+}
+.hamburger-menu.animate,
+.hamburger-menu.animate,
+.hamburger-menu.animate {
+  background: rgba(255, 255, 255, 0);
+}
+.hamburger-menu.animate:after, .hamburger-menu.animate:before,
+.hamburger-menu.animate:after,
+.hamburger-menu.animate:before,
+.hamburger-menu.animate:after,
+.hamburger-menu.animate:before {
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hamburger-menu.animate:after,
+.hamburger-menu.animate:after,
+.hamburger-menu.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+}
+.hamburger-menu.animate:before,
+.hamburger-menu.animate:before,
+.hamburger-menu.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+.hamburger-menu:before, .hamburger-menu:after,
+.hamburger-menu:before,
+.hamburger-menu:after,
+.hamburger-menu:before,
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: black;
+}
+.hamburger-menu:before,
+.hamburger-menu:before,
+.hamburger-menu:before {
+  bottom: 8px;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hamburger-menu:after,
+.hamburger-menu:after,
+.hamburger-menu:after {
+  top: 8px;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.mobile-menu-wrapper {
+  z-index: 10000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 4rem 1rem 4rem;
+  width: 100%;
+  height: 100vh;
+  background: #999;
+  text-align: center;
+  transform: translate(-100%, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-top: 0px;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .mobile-menu-wrapper {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .mobile-menu-wrapper {
+    display: block;
+  }
 }
 
 a {
@@ -446,6 +604,9 @@ section.flex--hero-banner .container .text-container p {
   font-style: italic;
 }
 
+section.home--sandbox {
+  display: none;
+}
 section.home--sandbox .featured-wrapper img {
   display: block;
   margin: 0 auto;
@@ -457,9 +618,21 @@ section.home--portfolio .portfolio-wrapper {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 1080px;
+}
+@media (max-width: 1023px) {
+  section.home--portfolio .portfolio-wrapper {
+    max-width: 720px;
+  }
+}
+@media (max-width: 767px) {
+  section.home--portfolio .portfolio-wrapper {
+    max-width: 540px;
+    justify-content: center;
+  }
 }
 section.home--portfolio .portfolio-wrapper .portfolio-item {
   width: 100%;
@@ -470,22 +643,20 @@ section.home--portfolio .portfolio-wrapper .portfolio-item {
   justify-content: flex-start;
   margin-bottom: 5rem;
 }
+@media (max-width: 1024px) {
+  section.home--portfolio .portfolio-wrapper .portfolio-item {
+    max-width: 350px;
+  }
+}
+@media (max-width: 767px) {
+  section.home--portfolio .portfolio-wrapper .portfolio-item {
+    max-width: 250px;
+  }
+}
 section.home--portfolio .portfolio-wrapper .portfolio-item img {
   width: 100%;
   height: auto;
   margin-bottom: 0.5rem;
-}
-section.home--portfolio .portfolio-wrapper .portfolio-item:nth-of-type(1) {
-  padding: 0 4rem;
-}
-section.home--portfolio .portfolio-wrapper .portfolio-item:nth-of-type(2) {
-  padding: 4rem 0;
-}
-section.home--portfolio .portfolio-wrapper .portfolio-item:nth-of-type(3) {
-  padding: 0 4rem;
-}
-section.home--portfolio .portfolio-wrapper .portfolio-item:nth-of-type(4) {
-  padding: 0rem;
 }
 section.home--portfolio .portfolio-wrapper .portfolio-item img {
   width: 100%;
@@ -501,6 +672,7 @@ section.home--logos img {
   display: block;
   max-width: 1080px;
   margin: 0 auto;
+  width: 100%;
 }
 @media (min-width: 1024px) {
   section.home--logos .desktop {
@@ -520,11 +692,22 @@ section.home--logos img {
 @media (max-width: 1023px) {
   section.home--logos .mobile {
     display: block;
+    max-width: 680px;
+  }
+}
+@media (max-width: 767px) {
+  section.home--logos .mobile {
+    max-width: 540px;
   }
 }
 
 section.home--mission {
   padding: 4rem 2rem;
+}
+@media (max-width: 1024px) {
+  section.home--mission {
+    padding: 0;
+  }
 }
 section.home--mission .text-container {
   max-width: 1080px;
@@ -532,6 +715,19 @@ section.home--mission .text-container {
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
+}
+@media (max-width: 1024px) {
+  section.home--mission .text-container {
+    max-width: 740px;
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 767px) {
+  section.home--mission .text-container {
+    max-width: 640px;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+  }
 }
 
 section.about-us .container {
@@ -542,18 +738,59 @@ section.about-us .container {
   padding: 2rem;
   width: calc(85% - 4rem);
 }
+@media (max-width: 767px) {
+  section.about-us .container {
+    padding: 2rem;
+    width: calc(100% - 6rem);
+  }
+}
+@media (max-width: 767px) {
+  section.about-us .container {
+    display: block;
+  }
+}
 section.about-us .col-1 {
   width: 55%;
+}
+@media (max-width: 767px) {
+  section.about-us .col-1 {
+    width: 100%;
+  }
 }
 section.about-us .col-1 p {
   font-size: 2rem;
   line-height: 1.25;
 }
+@media (max-width: 1023px) {
+  section.about-us .col-1 p {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 767px) {
+  section.about-us .col-1 p {
+    font-size: 1.5rem;
+  }
+}
 section.about-us .col-2 {
   width: 35%;
 }
+@media (max-width: 767px) {
+  section.about-us .col-2 {
+    width: 100%;
+  }
+}
 section.about-us .col-2 p {
   font-size: 2rem;
+}
+@media (max-width: 1023px) {
+  section.about-us .col-2 p {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 767px) {
+  section.about-us .col-2 p {
+    font-size: 1.5rem;
+  }
 }
 section.about-us .col-2 ul {
   margin: 0;
@@ -563,6 +800,16 @@ section.about-us .col-2 ul li {
   line-height: 1.25;
   position: relative;
   font-size: 2rem;
+}
+@media (max-width: 1023px) {
+  section.about-us .col-2 ul li {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 767px) {
+  section.about-us .col-2 ul li {
+    font-size: 1.5rem;
+  }
 }
 section.about-us .col-2 ul li:before {
   content: "→";
@@ -600,10 +847,20 @@ section.single-post .container {
   padding: 2rem;
   width: calc(100% - 4rem);
 }
+@media (max-width: 767px) {
+  section.single-post .container {
+    flex-direction: column-reverse;
+  }
+}
 section.single-post .container .portfolio-container {
   width: 65%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 767px) {
+  section.single-post .container .portfolio-container {
+    width: 100%;
+  }
 }
 section.single-post .container .portfolio-container img {
   padding: 2rem 0;
@@ -613,6 +870,11 @@ section.single-post .container .portfolio-container img {
 section.single-post .container .post-content {
   width: 30%;
 }
+@media (max-width: 767px) {
+  section.single-post .container .post-content {
+    width: 100%;
+  }
+}
 section.single-post .container .post-content h1.post-title {
   font-size: 2.25rem;
   line-height: 1.25;
@@ -621,6 +883,12 @@ section.single-post .container .post-content h1.post-title {
 section.single-post .container .post-content p {
   font-size: 1.15em;
   line-height: 1.25;
+}
+@media (max-width: 767px) {
+  section.single-post .container .post-content p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

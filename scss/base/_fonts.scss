@@ -75,6 +75,9 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   margin: 1rem auto 2rem;
   font-family: "LarsseitRegular";
+  @include media ('<tablet') {
+    font-size: 1.75rem;
+  }
 }
 
 h1 {

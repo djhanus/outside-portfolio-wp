@@ -14,6 +14,10 @@ header {
     @include media ('<desktop') {
       max-width: 720px;
     }
+
+    @include media ('<tablet') {
+    	padding: 1rem 2rem;
+    }
   }
 
   .logo-container {
@@ -48,6 +52,9 @@ header {
       text-transform: lowercase;
       border-bottom: 1px solid $green;
       color: $green;
+      @include media ('<tablet') {
+        display: none;
+      }
       &:hover {
         .special1-reveal {
           display: block;
@@ -74,6 +81,9 @@ header {
       text-transform: lowercase;
       border-bottom: 1px solid $pink;
       color: $pink;
+      @include media ('<tablet') {
+        display: none;
+      }
       &:hover {
         .special2-reveal {
           display: block;
@@ -94,6 +104,15 @@ header {
       }
     }
 
+    span.hide-mobile {
+      @include media ('<tablet') {
+        visibility: hidden;
+      }
+      @include media ('>=desktop') {
+        visibility: visible;
+      }
+    }
+
 
 
   }
@@ -102,6 +121,11 @@ header {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+
+    @include media ('<tablet') {
+      display: none;
+    }
+
     ul {
       list-style-type: none;
       display: flex;
