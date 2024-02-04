@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <title><?php wp_title(''); ?></title>
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="https://use.typekit.net/xal0igt.css">
+  <!-- <link rel="stylesheet" href="https://use.typekit.net/xal0igt.css"> -->
   <?php wp_head(); ?>
 </head>
 
@@ -53,12 +53,20 @@
 
       <!-- MOBILE MENU WRAPPER -->
       <div class="mobile-menu-wrapper">
-        frjtfjygyjgf<br />
-        frjtfjygyjgf<br />
-        frjtfjygyjgf<br />
-        frjtfjygyjgf<br />
-        fmtfyfk
-
+        <?php
+        wp_nav_menu(array(
+          'theme_location'  => 'primary-menu'
+        ));
+        ?>
+        <div class="logo-container">
+          <!-- copied from footer -->
+          <div class="year">
+            <?php echo get_field('year', 'options'); ?>
+          </div>
+          <div class="location">
+            <?php echo get_field('location', 'options'); ?>
+          </div>
+        </div>
       </div> <!-- /.mobile-menu-wrapper -->
 
     </div>

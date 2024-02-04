@@ -9,14 +9,16 @@ header {
     align-items: flex-start;
     margin: 0 auto;
     padding: 2rem;
-    width: calc(100% - 4rem);
+    width: calc(100vw - 4rem);
 
     @include media ('<desktop') {
       max-width: 720px;
     }
 
     @include media ('<tablet') {
-    	padding: 1rem 2rem;
+      padding: 1rem;
+      width: calc(100vw - 2rem);
+      height: 50px;
     }
   }
 

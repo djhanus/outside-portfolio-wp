@@ -4,7 +4,7 @@
     z-index: 100000;
     position: absolute;
     top: 23px;
-    right: 50px;
+    right: 1rem;
     margin-left: auto;
     width: 30px;
     height: 26px;
@@ -81,16 +81,16 @@
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 4rem 1rem 4rem;
-    width: 100%;
-    height: 100vh;
-    background: #999;
+    padding: 1rem;
+    width: calc(100vw - 2rem);
+    height: calc(100vh - 2rem);
+    background: $white;
     text-align: center;
     transform: translate(-100%, 0);
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    margin-top: 0px;
+    margin-top: 75px;
     display: flex;
 
     @include media ('>=tablet') {
@@ -99,6 +99,30 @@
 
     @include media ('<tablet') {
       display: block;
+    }
+
+    ul {
+      border: 2px solid;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem 1rem;
+      margin-bottom: 2rem;
+
+      li {
+        margin: 0.5rem 1.0rem;
+        a {
+          text-decoration: none;
+          font-size: 1.9rem;
+          text-transform: capitalize;
+          color: $blue;
+          font-family: "LarsseitRegular";
+          &:hover {
+            border-bottom: 3px solid $blue;
+          }
+        }
+      }
     }
 
   } // END mobile menu

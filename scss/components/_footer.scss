@@ -18,15 +18,24 @@ footer {
       color: $black;
       font-family: "PitchSansBold";
       line-height: 1.25;
+      @include media ('<tablet') {
+        font-size: 1.5rem;
+      }
       .year {
         font-weight: bold;
         font-size: 1.85rem;
         line-height: 1.25;
+        @include media ('<tablet') {
+          font-size: 1.5rem;
+        }
       }
       .location {
         font-weight: bold;
         font-size: 1.85rem;
         line-height: 1.25;
+        @include media ('<tablet') {
+          font-size: 1.5rem;
+        }
       }
     }
 
@@ -37,16 +46,21 @@ footer {
         flex-direction: column;
         li {
           padding: 0 1rem;
+          @include media ('<tablet') {
+          	line-height: 1.5;
+          }
           a {
             color: blue;
             font-weight: 100;
             text-transform: capitalize;
             text-decoration: underline;
+            @include media ('<desktop') {
+            	font-size: 1.25rem;
+            }
             &:after {
               content: "→";
               right: 0;
               padding-right: 15px;
-              font-size: 1.5rem;
             }
           }
         }

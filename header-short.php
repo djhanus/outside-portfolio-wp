@@ -36,11 +36,20 @@
 
       <!-- MOBILE MENU WRAPPER -->
       <div class="mobile-menu-wrapper">
-        frjtfjygyjgf<br />
-        frjtfjygyjgf<br />
-        frjtfjygyjgf<br />
-        frjtfjygyjgf<br />
-        fmtfyfk
+        <?php
+        wp_nav_menu(array(
+          'theme_location'  => 'primary-menu'
+        ));
+        ?>
+        <div class="logo-container">
+          <!-- copied from footer -->
+          <div class="year">
+            <?php echo get_field('year', 'options'); ?>
+          </div>
+          <div class="location">
+            <?php echo get_field('location', 'options'); ?>
+          </div>
+        </div>
       </div> <!-- /.mobile-menu-wrapper -->
 
     </div>
