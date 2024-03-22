@@ -147,26 +147,6 @@
             ]
         },
         {
-            "key": "field_65678c38d5178",
-            "label": "Mission Statement",
-            "name": "mission_statement",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "rows": 8,
-            "placeholder": "",
-            "new_lines": ""
-        },
-        {
             "key": "field_65678c49d5179",
             "label": "About Us",
             "name": "about_us",
@@ -263,5 +243,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1701453104
+    "modified": 1711072695
 }
