@@ -237,6 +237,12 @@ footer .container {
   align-items: center;
   width: calc(100% - 4rem);
 }
+@media (max-width: 767px) {
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 footer .container .logo-container {
   font-size: 1.85rem;
   font-weight: bold;
@@ -257,7 +263,7 @@ footer .container .logo-container .year {
 }
 @media (max-width: 767px) {
   footer .container .logo-container .year {
-    font-size: 1.5rem;
+    display: none;
   }
 }
 footer .container .logo-container .location {
@@ -267,7 +273,7 @@ footer .container .logo-container .location {
 }
 @media (max-width: 767px) {
   footer .container .logo-container .location {
-    font-size: 1.5rem;
+    display: none;
   }
 }
 footer .container .links-container {
