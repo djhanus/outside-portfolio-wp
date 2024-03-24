@@ -361,7 +361,7 @@ header .logo-container.short span.logo {
 header .logo-container span.special1 {
   position: relative;
   text-transform: lowercase;
-  border-bottom: 1px solid #1cdc9f;
+  border-bottom: 3px solid #1cdc9f;
   color: #1cdc9f;
 }
 @media (max-width: 767px) {
@@ -388,7 +388,7 @@ header .logo-container .special1-reveal img {
 header .logo-container span.special2 {
   position: relative;
   text-transform: lowercase;
-  border-bottom: 1px solid #f394b4;
+  border-bottom: 3px solid #f394b4;
   color: #f394b4;
 }
 @media (max-width: 767px) {

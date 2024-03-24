@@ -59,7 +59,7 @@ header {
     span.special1 {
       position: relative;
       text-transform: lowercase;
-      border-bottom: 1px solid $green;
+      border-bottom: 3px solid $green;
       color: $green;
       @include media ('<tablet') {
         /* display: none; */
@@ -72,7 +72,6 @@ header {
     }
     .special1-reveal {
       display: none;
-      // border: 2px dotted $green;
       height: 500px;
       width: 425px;
       top: 50px;
@@ -88,7 +87,7 @@ header {
     span.special2 {
       position: relative;
       text-transform: lowercase;
-      border-bottom: 1px solid $pink;
+      border-bottom:3px solid $pink;
       color: $pink;
       @include media ('<tablet') {
         /* display: none; */
