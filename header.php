@@ -3,6 +3,10 @@
   <meta charset="utf-8">
   <title><?php wp_title(''); ?></title>
   <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
   <?php wp_head(); ?>
 </head>
 
@@ -57,15 +61,6 @@
           'theme_location'  => 'primary-menu'
         ));
         ?>
-        <div class="logo-container">
-          <!-- copied from footer -->
-          <div class="year">
-            <?php echo get_field('year', 'options'); ?>
-          </div>
-          <div class="location">
-            <?php echo get_field('location', 'options'); ?>
-          </div>
-        </div>
       </div> <!-- /.mobile-menu-wrapper -->
 
     </div>

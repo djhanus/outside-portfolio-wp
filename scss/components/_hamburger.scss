@@ -99,10 +99,12 @@
 
     @include media ('<tablet') {
       display: block;
+      margin-top: 0px;
+      padding-top: 50px;
     }
 
     ul {
-      border: 2px solid;
+      /* border: 2px solid; */
       list-style-type: none;
       display: flex;
       flex-direction: column;

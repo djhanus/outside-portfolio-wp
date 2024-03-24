@@ -4,7 +4,11 @@
   <section class="home--sandbox">
     <div class="container">
       <div class="featured-wrapper">
+
         <img src="<?php echo get_field('sandbox'); ?>" alt="">
+
+        <img src="<?php echo get_field('sandbox_mobile'); ?>" alt="" class="mobile">
+
       </div>
     </div>
   </section>
