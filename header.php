@@ -3,7 +3,6 @@
   <meta charset="utf-8">
   <title><?php wp_title(''); ?></title>
   <meta name="viewport" content="width=device-width">
-  <!-- <link rel="stylesheet" href="https://use.typekit.net/xal0igt.css"> -->
   <?php wp_head(); ?>
 </head>
 
@@ -22,7 +21,7 @@
         <?php echo get_field('madlib_verb', 'options'); ?>
         </span>
 
-        <span class="hide-mobile">in</span>
+        <span class="hide-mobile"></span>
 
         <span class="special1"><?php echo get_field('madlib_special1', 'options'); ?><div class="special1-reveal"><img src="<?php echo get_field('madlib_special1_reveal', 'options'); ?>" /></div></span>
 
@@ -41,9 +40,9 @@
         ));
         ?>
 
-        <div class="dark-mode-button">
+        <!-- <div class="dark-mode-button">
           <img src="<?php echo get_field('dark_mode_icon','options'); ?>" alt="darkmode-btn">
-        </div>
+        </div> -->
       </div>
 
       <!-- HAMBURGER MENU ICON -->

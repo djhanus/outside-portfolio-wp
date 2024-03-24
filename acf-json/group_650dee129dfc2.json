@@ -44,9 +44,7 @@
             "post_type": [
                 "portfolio"
             ],
-            "post_status": [
-                "publish"
-            ],
+            "post_status": "",
             "taxonomy": "",
             "filters": [
                 "search"
@@ -243,5 +241,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1711072695
+    "modified": 1711293403
 }

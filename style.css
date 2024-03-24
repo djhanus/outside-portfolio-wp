@@ -288,7 +288,7 @@ footer .container .links-container ul li {
 footer .container .links-container ul li a {
   color: blue;
   font-weight: 100;
-  text-transform: capitalize;
+  text-transform: lowercase;
   text-decoration: underline;
   font-size: 2rem;
 }
@@ -325,7 +325,7 @@ header .container {
   header .container {
     padding: 1rem;
     width: calc(100vw - 2rem);
-    height: 50px;
+    height: auto;
   }
 }
 header .logo-container {
@@ -334,6 +334,13 @@ header .logo-container {
   line-height: 1.25;
   color: #0052f1;
   font-family: "LarsseitRegular";
+  width: 100%;
+  max-width: 550px;
+}
+@media (max-width: 767px) {
+  header .logo-container {
+    max-width: 275px;
+  }
 }
 header .logo-container a {
   text-transform: capitalize;
@@ -358,7 +365,7 @@ header .logo-container span.special1 {
 }
 @media (max-width: 767px) {
   header .logo-container span.special1 {
-    display: none;
+    /* display: none; */
   }
 }
 header .logo-container span.special1:hover .special1-reveal {
@@ -385,7 +392,7 @@ header .logo-container span.special2 {
 }
 @media (max-width: 767px) {
   header .logo-container span.special2 {
-    display: none;
+    /* display: none; */
   }
 }
 header .logo-container span.special2:hover .special2-reveal {
@@ -406,7 +413,7 @@ header .logo-container .special2-reveal img {
 }
 @media (max-width: 767px) {
   header .logo-container span.hide-mobile {
-    visibility: hidden;
+    /* visibility: hidden; */
   }
 }
 @media (min-width: 1024px) {
@@ -693,6 +700,7 @@ section.home--portfolio .portfolio-wrapper .portfolio-item {
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 5rem;
+  border: 1px dotted #CCC;
 }
 @media (max-width: 1024px) {
   section.home--portfolio .portfolio-wrapper .portfolio-item {
@@ -707,7 +715,7 @@ section.home--portfolio .portfolio-wrapper .portfolio-item {
 section.home--portfolio .portfolio-wrapper .portfolio-item img {
   width: 100%;
   height: auto;
-  margin-bottom: 0rem;
+  margin-bottom: 0.25rem;
 }
 section.home--portfolio .portfolio-wrapper .portfolio-item img {
   width: 100%;
@@ -752,36 +760,6 @@ section.home--logos img {
   }
 }
 
-section.home--mission {
-  display: none;
-  padding: 4rem 2rem;
-}
-@media (max-width: 1024px) {
-  section.home--mission {
-    padding: 0;
-  }
-}
-section.home--mission .text-container {
-  max-width: 1080px;
-  margin: 1rem auto;
-  font-size: 2rem;
-  font-weight: 400;
-  text-align: center;
-}
-@media (max-width: 1024px) {
-  section.home--mission .text-container {
-    max-width: 740px;
-    font-size: 1.75rem;
-  }
-}
-@media (max-width: 767px) {
-  section.home--mission .text-container {
-    max-width: 640px;
-    padding: 0 1rem;
-    font-size: 1.5rem;
-  }
-}
-
 section.about-us {
   text-align: center;
 }
@@ -789,7 +767,6 @@ section.about-us .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
   padding: 2rem;
   width: calc(85% - 4rem);
 }
@@ -806,6 +783,8 @@ section.about-us .container {
 }
 section.about-us .col-1 {
   width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 @media (max-width: 767px) {
   section.about-us .col-1 {

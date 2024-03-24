@@ -42,6 +42,7 @@ section.home--portfolio {
             flex-direction: column;
             justify-content: flex-start;
             margin-bottom: 5rem;
+            border: 1px dotted #CCC;
 
             @include media ('<=desktop') {
                 max-width: 350px;
@@ -54,21 +55,8 @@ section.home--portfolio {
             img {
                 width: 100%;
                 height: auto;
-                margin-bottom: 0rem;
+                margin-bottom: 0.25rem;
             }
-
-            // &:nth-of-type(1) {
-            //   padding: 0 4rem;
-            // }
-            // &:nth-of-type(2) {
-            //   padding: 4rem 0;
-            // }
-            // &:nth-of-type(3) {
-            //   padding: 0 4rem;
-            // }
-            // &:nth-of-type(4) {
-            //   padding: 0rem;
-            // }
 
             img {
                 width: 100%;
@@ -124,7 +112,6 @@ section.about-us {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: flex-start;
         padding: 2rem;
         width: calc(85% - 4rem);
 
@@ -142,6 +129,8 @@ section.about-us {
 
     .col-1 {
         width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
 
         @include media ('<tablet') {
             width: 100%;

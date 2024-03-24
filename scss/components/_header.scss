@@ -18,7 +18,7 @@ header {
     @include media ('<tablet') {
       padding: 1rem;
       width: calc(100vw - 2rem);
-      height: 50px;
+      height: auto;
     }
   }
 
@@ -28,6 +28,12 @@ header {
     line-height: 1.25;
     color: $blue;
     font-family: "LarsseitRegular";
+    width: 100%;
+    max-width: 550px;
+
+    @include media ('<tablet') {
+      max-width: 275px;
+    }
 
     a {
       text-transform: capitalize;
@@ -55,7 +61,7 @@ header {
       border-bottom: 1px solid $green;
       color: $green;
       @include media ('<tablet') {
-        display: none;
+        /* display: none; */
       }
       &:hover {
         .special1-reveal {
@@ -84,7 +90,7 @@ header {
       border-bottom: 1px solid $pink;
       color: $pink;
       @include media ('<tablet') {
-        display: none;
+        /* display: none; */
       }
       &:hover {
         .special2-reveal {
@@ -108,7 +114,7 @@ header {
 
     span.hide-mobile {
       @include media ('<tablet') {
-        visibility: hidden;
+        /* visibility: hidden; */
       }
       @include media ('>=desktop') {
         visibility: visible;
