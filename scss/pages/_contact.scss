@@ -1,7 +1,7 @@
 .page--default {
     &.contact {
         .container {
-            max-width: 70%;
+            max-width: 50%;
 
             @include media ('<=tablet') {
                 max-width: 100%;
@@ -11,24 +11,32 @@
                 margin-bottom: 4rem;
                 font-size: 4rem;
                 font-family: "LarsseitRegular";
+                display: none;
             }
         }
 
     }
 }
 
-.gform_wrapper.gravity-theme .gfield input.large, .gform_wrapper.gravity-theme .gfield select.large {
-    border-radius: 25px;
-    border: 2px solid $blue;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.gform_title {
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    font-family: "LarsseitRegular";
 }
 
-.gform_wrapper.gravity-theme .gfield textarea.large {
+.gform_wrapper.gravity-theme .gfield input, .gform_wrapper.gravity-theme .gfield select{
     border-radius: 25px;
     border: 2px solid $blue;
     padding-left: 1rem;
     padding-right: 1rem;
+    font-family: "LarsseitRegular";
+}
+
+.gform_wrapper.gravity-theme .gfield textarea {
+    border-radius: 25px;
+    border: 2px solid $blue;
+    padding: 1rem 1.25rem;
+    font-family: "LarsseitRegular";
 }
 
 .gform_wrapper.gravity-theme .gfield_label {
@@ -42,7 +50,7 @@
     color: white;
     padding: 0.5rem 2.5rem;
     border-radius: 25px;
-    border: none;
+    border: 2px solid $blue;
     text-decoration: none;
     margin: 0 0.5rem;
     font-size: 20px;
@@ -50,6 +58,10 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
     white-space: nowrap;
+    &:hover {
+        background-color: white;
+        color: $blue;
+    }
 }
 
 
