@@ -5,7 +5,6 @@ define('IMAGES', THEME_URL . '/img');
 
 
 function enqueue_parent_styles() {
-  // wp_enqueue_script('jquery-script', 'https://code.jquery.com/jquery-3.3.1.min.js', false, null, true);
   wp_enqueue_script('main-js', get_stylesheet_directory_uri() .'/js/src/main.js', false, null, true);
 }
 add_action('wp_enqueue_scripts', 'enqueue_parent_styles');
