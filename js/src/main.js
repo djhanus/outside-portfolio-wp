@@ -6,8 +6,11 @@ jQuery(document).ready(function($){
   $('.slick-slider').slick({
     dots: true,
     infinite: true,
-    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 750,
     slidesToShow: 1,
+    adaptiveHeight: true
   });
 
   let state = "close";

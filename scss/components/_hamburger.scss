@@ -27,7 +27,7 @@
     height: 4px;
     position: relative;
     transform: translateY(11px);
-    background: black;
+    background: $blue;
     transition: all 0ms 300ms;
 
     &:after,
@@ -59,7 +59,7 @@
       content: "";
       position: absolute;
       left: 0;
-      background: black;
+      background: $blue;
     }
 
     &:before {

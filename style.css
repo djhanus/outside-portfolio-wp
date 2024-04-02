@@ -4,12 +4,12 @@
   position: relative;
   display: block;
   box-sizing: border-box;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
@@ -17,14 +17,16 @@
 
 .slick-list {
   position: relative;
-  overflow: hidden;
   display: block;
+  overflow: hidden;
   margin: 0;
   padding: 0;
 }
+
 .slick-list:focus {
   outline: none;
 }
+
 .slick-list.dragging {
   cursor: pointer;
   cursor: hand;
@@ -41,47 +43,58 @@
 
 .slick-track {
   position: relative;
-  left: 0;
   top: 0;
+  left: 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.slick-track:before, .slick-track:after {
-  content: "";
+
+.slick-track:before,
+.slick-track:after {
   display: table;
+  content: "";
 }
+
 .slick-track:after {
   clear: both;
 }
+
 .slick-loading .slick-track {
   visibility: hidden;
 }
 
 .slick-slide {
+  display: none;
   float: left;
   height: 100%;
   min-height: 1px;
-  display: none;
 }
+
 [dir=rtl] .slick-slide {
   float: right;
 }
+
 .slick-slide img {
   display: block;
 }
+
 .slick-slide.slick-loading img {
   display: none;
 }
+
 .slick-slide.dragging img {
   pointer-events: none;
 }
+
 .slick-initialized .slick-slide {
   display: block;
 }
+
 .slick-loading .slick-slide {
   visibility: hidden;
 }
+
 .slick-vertical .slick-slide {
   display: block;
   height: auto;
@@ -587,7 +600,7 @@ header .main-menu-container .dark-mode-button img {
   height: 4px;
   position: relative;
   transform: translateY(11px);
-  background: black;
+  background: #0052f1;
   transition: all 0ms 300ms;
 }
 .hamburger-menu:after, .hamburger-menu:before,
@@ -630,7 +643,7 @@ header .main-menu-container .dark-mode-button img {
   content: "";
   position: absolute;
   left: 0;
-  background: black;
+  background: #0052f1;
 }
 .hamburger-menu:before,
 .hamburger-menu:before,
@@ -989,17 +1002,18 @@ section.home--sandbox-simple .container {
 section.home--sandbox-simple .container .slick-slider .slick-dots li {
   width: 10px;
 }
-section.home--sandbox-simple .container .slick-slider .slick-dots li button::before {
-  font-family: "slick";
-  font-size: 12px;
+section.home--sandbox-simple .container .slick-dots li button::before {
+  font-size: 30px;
   line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 20px;
   height: 20px;
   content: "•";
-  text-align: center;
+  color: #1f4f28;
+  opacity: 0.25;
+}
+section.home--sandbox-simple .container .slick-dots li.slick-active button::before {
+  color: #0052f1;
+  opacity: 1;
 }
 section.home--sandbox-simple img {
   margin: 0 auto;
