@@ -1,0 +1,76 @@
+.page--default {
+    &.contact {
+        .container {
+            max-width: 70%;
+
+            @include media ('<=tablet') {
+                max-width: 100%;
+            }
+
+            h1.page-title {
+                margin-bottom: 4rem;
+                font-size: 4rem;
+                font-family: "LarsseitRegular";
+            }
+        }
+
+    }
+}
+
+.gform_wrapper.gravity-theme .gfield input.large, .gform_wrapper.gravity-theme .gfield select.large {
+    border-radius: 25px;
+    border: 2px solid $blue;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.gform_wrapper.gravity-theme .gfield textarea.large {
+    border-radius: 25px;
+    border: 2px solid $blue;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.gform_wrapper.gravity-theme .gfield_label {
+	font-size: 24px !important;
+	font-weight: 600 !important;
+}
+
+
+.gform_footer input.button, .gform_footer input[type=submit], .gform_page_footer input.button, .gform_page_footer input[type=submit] {
+    background-color: $blue;
+    color: white;
+    padding: 0.5rem 2.5rem;
+    border-radius: 25px;
+    border: none;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 20px;
+    font-family: "LarsseitMedium";
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+}
+
+
+.gform_wrapper.gravity-theme .gfield_checkbox label, .gform_wrapper.gravity-theme .gfield_radio label {
+    font-size: 20px !important;
+    padding-left: 0.5rem;
+}
+
+.gform_wrapper {
+    input[type=checkbox] {
+        -ms-transform: scale(1.6); /* IE */
+        -moz-transform: scale(1.6); /* FF */
+        -webkit-transform: scale(1.6); /* Safari and Chrome */
+        -o-transform: scale(1.6); /* Opera */
+        transform: scale(1.6);
+    }
+    input[type=radio] {
+        -ms-transform: scale(1.6); /* IE */
+        -moz-transform: scale(1.6); /* FF */
+        -webkit-transform: scale(1.6); /* Safari and Chrome */
+        -o-transform: scale(1.6); /* Opera */
+        transform: scale(1.6);
+    }
+}

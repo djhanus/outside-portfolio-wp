@@ -78,6 +78,24 @@
 
 
 
+
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slick-slider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        speed: 750,
+        slidesToShow: 1,
+        adaptiveHeight: true
+      });
+    });
+  </script>
+
+
+
   <section class="home--sandbox-simple">
     <div class="container">
         <?php if( have_rows('slider_bottom') ): ?>
