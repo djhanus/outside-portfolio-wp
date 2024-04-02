@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_65678bec9fe7e",
-            "label": "Sandbox Feature",
+            "label": "Sandbox Welcome Image",
             "name": "sandbox",
             "aria-label": "",
             "type": "image",
@@ -12,7 +12,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "70",
                 "class": "",
                 "id": ""
             },
@@ -25,11 +25,11 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
-            "preview_size": "medium"
+            "preview_size": "large"
         },
         {
             "key": "field_66006c4acb324",
-            "label": "Sandbox Feature (Mobile)",
+            "label": "Mobile Version",
             "name": "sandbox_mobile",
             "aria-label": "",
             "type": "image",
@@ -37,7 +37,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "30",
                 "class": "",
                 "id": ""
             },
@@ -50,11 +50,11 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
-            "preview_size": "medium"
+            "preview_size": "thumbnail"
         },
         {
             "key": "field_65677f939399c",
-            "label": "Portfolio",
+            "label": "Featured Portfolio Items",
             "name": "portfolio",
             "aria-label": "",
             "type": "relationship",
@@ -127,7 +127,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "50",
+                        "width": "70",
                         "class": "",
                         "id": ""
                     },
@@ -140,11 +140,11 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": "",
-                    "preview_size": "medium"
+                    "preview_size": "large"
                 },
                 {
                     "key": "field_65678ca7493ca",
-                    "label": "Logos - Narrow Layout",
+                    "label": "Mobile Version",
                     "name": "logos_narrow",
                     "aria-label": "",
                     "type": "image",
@@ -152,7 +152,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "50",
+                        "width": "30",
                         "class": "",
                         "id": ""
                     },
@@ -228,24 +228,54 @@
             ]
         },
         {
-            "key": "field_65678c5bd517a",
-            "label": "Simple Sandbox",
-            "name": "simple_sandbox",
+            "key": "field_660ad517435ba",
+            "label": "Image Slider Gallery",
+            "name": "slider_bottom",
             "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "This area will accept any text formatting or images (Visual) in addition to HTML or third-party code snippets (Text).",
+            "type": "repeater",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "80",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_660ad526435bb",
+                    "label": "Slide Image",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "75",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "large",
+                    "parent_repeater": "field_660ad517435ba"
+                }
+            ]
         }
     ],
     "location": [
@@ -266,5 +296,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1711303765
+    "modified": 1712024882
 }

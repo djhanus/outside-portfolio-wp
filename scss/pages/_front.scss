@@ -215,23 +215,47 @@ section.about-us {
 }
 
 section.home--sandbox-simple {
-    .featured-wrapper {
+    .container {
         padding: 2rem;
-        width: calc(75% - 4rem);
+        width: 75%;
         margin: 0 auto;
         text-align: center;
-        min-height: 350px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
         padding: 1rem;
 
-        img {
-            display: block;
-            margin: 0 auto;
-            height: auto;
+        @include media ('<desktop') {
+            width: calc(100% - 4rem);
         }
 
+        .slick-slider {
+
+            .slick-dots {
+                li {
+                    width: 10px;
+                }
+            }
+
+            .slick-dots li button::before {
+              font-family: 'slick';
+              font-size: 12px;
+              line-height: 20px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 20px;
+              height: 20px;
+              content: '•';
+              text-align: center;
+            }
+        }
+
+
+
     }
+
+    img {
+        margin: 0 auto;
+        height: auto;
+        width: 100%;
+    }
+
 }

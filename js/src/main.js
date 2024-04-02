@@ -1,8 +1,14 @@
 jQuery(document).ready(function($){
 // ------------------------------- //
 
-  console.log('main.js');
-  console.log('burger.js');
+  console.log('init main.js');
+
+  $('.slick-slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+  });
 
   let state = "close";
 

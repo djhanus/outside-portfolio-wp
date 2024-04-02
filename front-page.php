@@ -80,12 +80,15 @@
 
   <section class="home--sandbox-simple">
     <div class="container">
-      <div class="featured-wrapper">
-        <?php echo get_field('simple_sandbox'); ?>
-      </div>
+        <?php if( have_rows('slider_bottom') ): ?>
+        <div class="slick-slider">
+            <?php while( have_rows('slider_bottom') ): the_row(); ?>
+                <div><img src="<?php echo get_sub_field('image'); ?>" /></div>
+            <?php endwhile; ?>
+        </div>
+        <?php endif; ?>
     </div>
   </section>
-
 
 
 <?php endwhile; endif;
