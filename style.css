@@ -976,12 +976,12 @@ section.about-us .col-2 ul li:before {
 
 section.home--sandbox-simple .container {
   padding: 2rem;
-  width: 75%;
+  width: 65%;
   margin: 0 auto;
   text-align: center;
   padding: 1rem;
 }
-@media (max-width: 1023px) {
+@media (max-width: 768px) {
   section.home--sandbox-simple .container {
     width: calc(100% - 4rem);
   }
