@@ -1,0 +1,39 @@
+.woo-product {
+    max-width: 1080px;
+
+    h1.page-title {
+        margin-bottom: 1.5rem;
+        font-family: "LarsseitMedium" !important;
+    }
+
+    .woocommerce div.product form.cart .button {
+    	background-color: $blue;
+    }
+
+    .wc-tabs {
+        display: none;
+    }
+
+    .product_meta {
+        display: none;
+    }
+
+    p.price {
+        color: $black !important;
+    }
+
+    .quantity {
+        padding-right: 1rem;
+        -ms-transform: scale(1.3); /* IE */
+        -moz-transform: scale(1.3); /* FF */
+        -webkit-transform: scale(1.3); /* Safari and Chrome */
+        -o-transform: scale(1.3); /* Opera */
+        transform: scale(1.3);
+    }
+
+    #tab-description {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+}

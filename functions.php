@@ -27,4 +27,4 @@ function write_log(...$log) {
 }
 
 
-add_theme_support( 'post-thumbnails', array( 'post','portfolio' ) );
+add_theme_support( 'post-thumbnails', array( 'post','portfolio','product' ) );
