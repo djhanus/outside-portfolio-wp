@@ -47,7 +47,7 @@
 
 
 
-  <section class="home--logos">
+  <section class="home--logos" id="brand-identity">
     <div class="container">
       <?php
       $logos = get_field('logos');

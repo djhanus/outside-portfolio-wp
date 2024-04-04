@@ -31,11 +31,25 @@
 
         <span class="hide-mobile"></span>
 
-        <span class="special1"><?php echo get_field('madlib_special1', 'options'); ?><div class="special1-reveal"><img src="<?php echo get_field('madlib_special1_reveal', 'options'); ?>" /></div></span>
+        <span class="special1">
+            <a onclick="location.href='<?php echo site_url(); ?>/#brand-identity'">
+                <?php echo get_field('madlib_special1', 'options'); ?>
+            </a>
+            <div class="special1-reveal">
+                    <img src="<?php echo get_field('madlib_special1_reveal', 'options'); ?>" />
+            </div>
+        </span>
 
         <span class="hide-mobile">and</span>
 
-        <span class="special2"><?php echo get_field('madlib_special2', 'options'); ?><div class="special2-reveal"><img src="<?php echo get_field('madlib_special2_reveal', 'options'); ?>" /></div></span>
+        <span class="special2">
+            <a onclick="location.href='/shop'">
+                <?php echo get_field('madlib_special2', 'options'); ?>
+            </a>
+            <div class="special2-reveal">
+                <img src="<?php echo get_field('madlib_special2_reveal', 'options'); ?>" />111
+            </div>
+        </span>
 
         <span class="hide-mobile">.</span>
 

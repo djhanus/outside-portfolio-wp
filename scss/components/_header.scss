@@ -112,6 +112,11 @@ header {
       }
     }
 
+    a {
+        color: inherit;
+        text-transform: none;
+    }
+
     span.hide-mobile {
       @include media ('<tablet') {
         /* visibility: hidden; */
