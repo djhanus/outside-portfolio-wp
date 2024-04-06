@@ -8,6 +8,8 @@ section.home--sandbox {
             height: auto;
             max-width: calc(100% - 4rem);
 
+            a { text-decoration: none; }
+
             @include media ('>tablet') {
                 display: block;
             }

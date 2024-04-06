@@ -5,9 +5,9 @@
     <div class="container">
       <div class="featured-wrapper">
 
-        <img src="<?php echo get_field('sandbox'); ?>" alt="">
+        <a href="<?php echo site_url(); ?>/shop"><img src="<?php echo get_field('sandbox'); ?>" alt=""></a>
 
-        <img src="<?php echo get_field('sandbox_mobile'); ?>" alt="" class="mobile">
+        <a href="<?php echo site_url(); ?>/shop"><img src="<?php echo get_field('sandbox_mobile'); ?>" alt="" class="mobile"></a>
 
       </div>
     </div>

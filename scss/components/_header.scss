@@ -59,14 +59,19 @@ header {
     span.special1 {
       position: relative;
       text-transform: lowercase;
-      border-bottom: 3px solid $green;
+      border-bottom: 0px solid $green;
       color: $green;
-      @include media ('<tablet') {
-        /* display: none; */
+      font-weight: 400;
+      a {
+          text-decoration: none;
+          font-weight: 400;
       }
       &:hover {
         .special1-reveal {
           display: block;
+          @include media ('<tablet') {
+            display: none;
+          }
         }
       }
     }
@@ -87,14 +92,16 @@ header {
     span.special2 {
       position: relative;
       text-transform: lowercase;
-      border-bottom:3px solid $pink;
+      border-bottom: 0px solid $pink;
       color: $pink;
-      @include media ('<tablet') {
-        /* display: none; */
-      }
+      font-weight: 400;
+
       &:hover {
         .special2-reveal {
-          display: block;
+            display: block;
+          @include media ('<tablet') {
+            display: none;
+          }
         }
       }
     }
